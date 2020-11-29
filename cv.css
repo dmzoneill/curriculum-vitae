@@ -1,0 +1,380 @@
+/* thai */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Kanit Thin'), local('Kanit-Thin'), url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcr72KxaAcJxA.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Kanit Thin'), local('Kanit-Thin'), url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcr72Kw2AcJxA.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Kanit Thin'), local('Kanit-Thin'), url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcr72KwyAcJxA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: local('Kanit Thin'), local('Kanit-Thin'), url(https://fonts.gstatic.com/s/kanit/v7/nKKX-Go6G5tXcr72KwKAcA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* thai */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Kanit ExtraLight'), local('Kanit-ExtraLight'), url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5aOhWzVaF5NQ.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Kanit ExtraLight'), local('Kanit-ExtraLight'), url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5aOhWoVaF5NQ.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Kanit ExtraLight'), local('Kanit-ExtraLight'), url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5aOhWpVaF5NQ.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: local('Kanit ExtraLight'), local('Kanit-ExtraLight'), url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5aOhWnVaE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+            
+@media print {
+    body, section {
+        margin: 0px !important;
+        padding: 0px !important;
+        box-shadow: 0 0 0 rgba(255,255,255,255) !important;
+    }
+    footer {
+        page-break-after: always;
+    }
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    background: rgb(204,204,204); 
+    margin: 0px;
+    padding: 10px;
+}
+
+section {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    padding: 40px 40px 40px 40px;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    width: 21cm;
+    height: 29.7cm; 
+}
+
+.ResumePage {
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+}
+
+.ResumeHeader {
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: flex;
+}
+
+.ResumeHeaderLeft {
+    display: inline-block;
+    left: 0;
+    margin: auto 0;
+    width: 50%;
+}
+
+.ResumeHeaderRight {
+    display: inline-block;
+    right: 0;
+    margin: auto 0;
+    width: 50%;
+    text-align: right;
+}
+
+.ResumeHeaderLeft h3 {
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+.ResumeHeaderLeft h4 {
+    margin-left: 15px;
+    margin-top: -8px;
+    font-size: 11pt; 
+    font-weight: 600;
+}
+
+.ResumeBody {
+    padding: 0px;
+    margin: 0px;
+}
+
+.ResumeBodyLeft {
+    display: inline-block;
+    padding-right: 20px;
+    position: absolute;
+    left: 0;
+    border-right: 2px solid #999999;
+    width: 270px;
+}
+
+.ResumeBodyRight {
+    display: inline-block;
+    padding-left: 20px;
+    position: absolute;
+    left: 290px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    color: #000000;
+    font-size: 11pt;
+    line-height: 1;
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+.PersonalDetails, 
+.PersonalDetailsAddress, 
+.LeftSideDetails, 
+li, 
+.ReferenceRole,
+.ReferenceNumber,
+.ReferenceEmail,
+.JobPeriod {
+    font-family: 'Kanit', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-weight: 200;
+    font-size: 28pt;
+}
+
+h3.role {
+    margin-bottom: -5px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 17pt;
+    text-shadow: 1px 0px #2e74b5;
+}
+
+h2, h3 {
+    color: #2e74b5;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 15pt;
+}
+
+h4 {
+    font-weight: 300;
+    margin-left: 10px;
+    font-size: 13pt;
+    margin-top: -10px;
+}
+
+h5 {
+    font-weight: 100;
+    font-size: 11pt;
+    letter-spacing: 1px;
+}
+
+h6 {
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 10pt;
+    text-shadow: 1px 0px #000000;
+    letter-spacing: 1px;
+}
+
+.ResumeBody h6 {
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 9pt;
+    text-shadow: 1px 0px #000000;
+    letter-spacing: 1px;
+}
+
+.ResumeHeaderRight h6 {
+    color: #2e74b5;
+}
+
+.PersonalDetails, .PersonalDetailsAddress, .JobDetails, .ReferenceName, .LeftSideDetails {
+    margin-left: 10px;
+    font-size: 11pt;
+}
+
+.ReferenceName {
+    margin-bottom: 0px;
+}
+
+.ReferenceEmail {
+    color: #2e74b5;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 9pt;
+}
+
+.ReferenceDetails {
+    margin-left: 20px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+
+ul.PersonalDetails, ul.LeftSideDetails, ul.ReferenceName, ul.JobDetails {
+    margin-left: -20px;
+    margin-top: 5px;
+}
+
+ul.PersonalDetails li, ul.LeftSideDetails li, ul.ReferenceName li, ul.JobDetails li, .PersonalDetailsAddress {
+    font-size: 11pt;
+    line-height: 1.2;
+}
+
+ul.ReferenceName li {
+    font-weight: 900;
+    text-shadow: 1px 0px #000000;
+}
+
+.sublist {
+    margin-top: 2px;
+    margin-left: -20px;
+}
+
+.underline {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    padding-top: 0px;
+    border-bottom: 2px solid #999999;
+    width: 100%;
+}
+
+.Job {
+    display: block;
+}
+
+.Job:hover {
+    display: block;
+    background-color: #2e74b511;
+    border-right: 1px solid #2e74b5;
+}
+
+.JobHeader {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.JobPeriod {
+    display: inline-block;
+    width: 25%;
+    font-size: 10pt;
+    padding-right: 20px;
+    margin: auto 0;
+    font-weight: 200;
+}
+
+.JobTitle {
+    display: inline-block;
+}
+
+.JobTitle h3 {
+    margin: 0;
+    margin-bottom: -10px;
+}
+
+.JobBody {
+    display: block;
+}
+
+#dialogimage {
+    opacity: 0.5;
+}
+
+.float-print {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color:#2e74b5;
+    color:#FFFFFF;
+    border-radius:50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+}
+.watermark {
+    position: absolute;
+    margin-top: 13cm;
+    margin-left: 3cm;
+    margin-right: 3cm;
+    opacity: 0.075;
+    font-size: 12em;
+    width: 11cm;
+    text-align: center;
+    z-index: 1000;
+    color: #2e74b5;
+    transform: rotate(-45deg);
+    user-select: none;
+}
