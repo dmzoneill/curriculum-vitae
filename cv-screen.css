@@ -76,11 +76,14 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html, body {
+    height: 98%;
+}
+
 body {
     background: rgb(204,204,204); 
     margin: 0px;
     padding: 10px;
-    height: 100%;
 }
 
 section {
@@ -95,9 +98,19 @@ section {
 }
 
 @media (min-width: 50cm) {
+    div.container {
+        margin: auto;
+        width: 47cm; 
+        display: table;
+        height: 100%;
+    }
+
     div.pages {
         margin: auto;
         width: 47cm; 
+        display: table-cell;
+        height: 30cm;
+        vertical-align: middle;
     }
 
     section.page1 {
@@ -110,9 +123,15 @@ section {
 }
 
 @media (max-width: 49cm) {
+    div.container {
+        margin: auto;
+        width: 21cm;
+    }
+
     div.pages {
         margin: auto;
         width: 21cm; 
+        height: 64.5cm;
     }
 
     section.page1 {

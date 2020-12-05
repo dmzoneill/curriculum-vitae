@@ -4,16 +4,25 @@
         padding: 0px !important;
         box-shadow: 0 0 0 rgba(255,255,255,255) !important;
     }
+
     footer {
         page-break-after: always;
     }
+
     .no-print, .no-print * {
         display: none !important;
+    }
+
+    div.container {
+        margin: auto;
+        width: 21cm;
+        height: auto;
     }
 
     div.pages {
         margin: auto;
         width: 21cm; 
+        height: auto;
     }
     
     section.page1 {
@@ -23,5 +32,4 @@
     section.page2 {
         float: none;
     }
-    
 }
