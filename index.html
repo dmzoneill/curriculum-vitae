@@ -16,363 +16,395 @@
         <title>David O Neill - Curriculum Vitae</title>
         <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="cv.css">
+        <link rel="stylesheet" href="cv-screen.css">
+        <link rel="stylesheet" href="cv-print.css" media="print">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
         <script src="cv.js"></script>
     </head>
     <body>
-        <section>
-            <div class="watermark">cv.fio.ie</div>
-            <div class='ResumePage'>
-                <div class='ResumeHeader'>
-                    <div class='ResumeHeaderLeft'>
-                        <h1>David O Neill</h1>
-                        <h3 class='role'>Site Reliability Engineer</h3>
-                        <h4 class='role'>Senior Software Engineer</h4>
-                        <h4 class='role'>Dev Ops Engineer</h4>
-                        <h4 class='role'>Cloud Engineer</h4>
-                        <h4 class='role'>Systems Engineer</h4>
+        <div class="pages">
+            <section class="page1">
+                <div class="watermark">cv.fio.ie</div>
+                <div class="headerMarkTop no-print"></div>
+                <div class="photo no-print"><img src='photo.png' width='122' alt='candidate photo'/></div>
+                <div class="headerMarkRight1 no-print"></div>
+                <div class="headerMarkRight2 no-print"></div>
+                <div class='ResumePage'>
+                    <div class='ResumeHeader'>
+                        <div class='ResumeHeaderLeft'>
+                            <h1>David O Neill</h1>
+                            <h3 class='role'>Site Reliability Engineer</h3>
+                            <h4 class='role'>Senior Software Engineer</h4>
+                            <h4 class='role'>Dev Ops Engineer</h4>
+                            <h4 class='role'>Cloud Engineer</h4>
+                            <h4 class='role'>Systems Engineer</h4>
+                        </div>
+                        <div class='ResumeHeaderRight'>
+                            <h6>Linkedin</h6>
+                            <a href='https://www.linkedin.com/in/dmzoneill'>https://www.linkedin.com/in/dmzoneill</a>
+                            <h6>Github / Launchpad</h6>
+                            <a href='https://github.com/dmzoneill'>https://github.com/dmzoneill</a><br/>
+                            <a href='https://code.launchpad.net/~dmzoneill/+git'>https://code.launchpad.net/~dmzoneill/+git</a>
+                        </div>
                     </div>
-                    <div class='ResumeHeaderRight'>
-                        <h6>Linkedin</h6>
-                        <a href='https://www.linkedin.com/in/dmzoneill'>https://www.linkedin.com/in/dmzoneill</a>
-                        <h6>Github / Launchpad</h6>
-                        <a href='https://github.com/dmzoneill'>https://github.com/dmzoneill</a><br/>
-                        <a href='https://code.launchpad.net/~dmzoneill/+git'>https://code.launchpad.net/~dmzoneill/+git</a>
+                    <div class='ResumeBody'>
+                        <div class='ResumeBodyLeft'>
+                            <h2>Personal Details</h2>
+                            <div class='underline'></div>
+                            <h6 class="sidebar">Nationality</h6>
+                            <div class='PersonalDetails'>Irish (freely work in E.U)</div>
+                            <h6 class="sidebar">Address</h6>
+                            <div class='PersonalDetailsAddress'>
+                                <a href="https://goo.gl/maps/gwKzXpfeCKoBwTWv8">
+                                    Apt 5 Camden Wharf<br/>
+                                    Camden Quay<br/>
+                                    Cork<br/>
+                                    Ireland<br/>
+                                    T23PF65
+                                </a>
+                            </div>
+                            <h6 class="sidebar">Phone</h6>
+                            <div class='PersonalDetails'>
+                                <a href="tel:00353861938787">+353 86 193 8787</a>
+                            </div>
+                            <h6 class="sidebar">Email</h6>
+                            <div class='PersonalDetails'>
+                                <a href="mailto:dave@fio.ie">dave@fio.ie</a><br/>
+                                <a href="mailto:dmz.oneill@gmail.com">dmz.oneill@gmail.com</a><br/><br/>
+                            </div>
+                            <!--<h6>Date of Birth</h6>
+                            <div class='PersonalDetails'>26/03/1984<br/><br/></div>//-->
+                            <h2>Education</h2>
+                            <div class='underline'></div>
+                            <ul class='PersonalDetails'>
+                                <li>Bachelor's Degree Computer Systems</li>
+                                <li>Microsoft Certified Professional</li>
+                                <li>Network Certified Professional</li>
+                                <li>VMware vSphere</li>
+                            </ul>
+                            <h2>Programming</h2>
+                            <div class='underline'></div>
+                            <h6 class="sidebar">Ordered by most recently used</h6>
+                            <ul class='LeftSideDetails'>
+                                <li>Python (daily)</li>
+                                <li>PHP (daily)</li>
+                                <li>Bash/CShell (daily)</li>
+                                <li>HTML, CSS, JavaScript (daily)</li>
+                                <li>Java (Android)</li>
+                                <li>Swift (IOS)</li>
+                                <li>NodeJs</li>
+                                <li>C#</li>
+                                <li>Golang</li>
+                                <li>Classic ASP</li>
+                                <li>Perl</li>
+                                <li>C/C++</li>
+                                <li>Ansible, Chef, Cfengine, Puppet, Terraform DSL</li>
+                            </ul>
+                            <h2>Recognitions</h2>
+                            <div class='underline'></div>
+                            <ul class='LeftSideDetails'>
+                                <li>Division recognition reward for first sites deployment of Kerberos NFS<br/><br/></li>
+                                <li>Intel Shannon Recognition award for Design and Implementation of offsite development Centre<br/><br/></li>
+                                <li>Division recognition reward for first Step Delivering High Availability Solution for Cloud Native Deployments</li>
+                            </ul>                    
+                        </div>
+                        <div class='ResumeBodyRight'>
+                            <h2>Experience</h2>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>Jan 2019 - Present</div>
+                                    <div class='JobTitle'>
+                                        <h3>Site Reliability Engineer</h3>
+                                        <h6>Canonical (Ubuntu Linux)</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <h6>Engineer, Bootstack</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>50 Operations / 50 Development</li>
+                                        <li>Working on private cloud offerings for Canonical customers across a plethora of use-case requirements</li>
+                                        <li>Day to day technologies include, juju, maas, landscape, openstack, kubernetes and a number of networking and storage solutions such as ceph, swift, openvswitch, contrail, calico & flannel</li>
+                                        <li>Development consists of python (juju charms)</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>Sept 2018 - Jan 2019</div>
+                                    <div class='JobTitle'>
+                                        <h3>File System Engineer</h3>
+                                        <h6>Dell EMC</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <h6>File system Engineer, Data Domain Protection</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>Working on core debug analysis Data Domain product</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2014 - Sept 2018</div>
+                                    <div class='JobTitle'>
+                                        <h3>Network Software Engineer</h3>
+                                        <h6>Intel</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <h6>Containers orchestration team scrum master & technical lead</h6>
+                                    <ul class='JobDetails'>
+                                        <li>Working on Kubernetes with Docker, CNI, Etcd & flannel</li>
+                                        <li>CNI development in Golang for the support of DPDK/SRIOV/VHost User and Bonding.</li>
+                                        <li>CPU Manager for Kubernetes Development in Python</li>
+                                        <li>CI/CD Jenkins for build automation with Ansible</li>
+                                        <li>Openstack Kuryr - OVS</li>
+                                        <li>Clearwater IMS on kubernetes and AWS/GCP</li>
+                                        <li>Software Legal Compliance ProtexIP - Code Center</li>
+                                        <li><a href='https://networkbuilders.intel.com/experience-kits'>https://networkbuilders.intel.com/experience-kits</a></li>                        
+                                    </ul>
+                                </div>   
+                                <div class='JobBody'>
+                                    <h6>Technical lead for configuration management Open Network Software 2.0</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>Linux Kernel and Systemd-NetworkD,</li>
+                                        <li>Chef configuration of system-networkd</li>
+                                        <li>Systemd-networkd C - L2 / L3 FM6k / FM10K Chipsets</li>
+                                        <li>LAG / Port State / Port Attributes / UFD / FDB / QOS / VLAN</li>
+                                    </ul>
+                                </div>      
+                                <div class='JobBody'>
+                                    <h6>Technical lead for infrastructure of Open Network Software 1.2</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>C++, SWIG, Python, M4 Autotools, google protocol buffers and Zeromq</li>
+                                    </ul>
+                                </div>                   
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2012 - 2014</div>
+                                    <div class='JobTitle'>
+                                        <h3>UNIX Systems Programmer</h3>
+                                        <h6>Intel</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <h6>Development</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>Puppet, Perl, Bash, CShell, Vbscript, Jscript post deployment configuration for internal lab cloud provisioning solution (Windows/Linux/BSD)</li>
+                                        <li>OpenStack post provisioning configuration with Puppet</li>
+                                        <li>Openstack deployment scripts in Bash</li>
+                                        <li>PHP NetApp Storage Usage Analytics Web Service</li>
+                                        <li>C# .Net asynchronous library for Service Now ticket creation outlook plugin</li>
+                                    </ul>
+                                </div>                        
+                            </div>                    
+                        </div>                
                     </div>
                 </div>
-                <div class='ResumeBody'>
-                    <div class='ResumeBodyLeft'>
-                        <h2>Personal Details</h2>
-                        <div class='underline'></div>
-                        <h6>Nationality</h6>
-                        <div class='PersonalDetails'>Irish (freely work in E.U)</div>
-                        <h6>Address</h6>
-                        <div class='PersonalDetailsAddress'>Apt 5 Camden Wharf<br/>Camden Quay<br/>Cork<br/>Ireland<br/>T23PF65</div>
-                        <h6>Phone</h6>
-                        <div class='PersonalDetails'>+353 86 193 8787</div>
-                        <h6>Email</h6>
-                        <div class='PersonalDetails'>dave@fio.ie<br/>dmz.oneill@gmail.com</div>
-                        <h6>Date of Birth</h6>
-                        <div class='PersonalDetails'>26/03/1984<br/><br/></div>
-                        <h2>Education</h2>
-                        <div class='underline'></div>
-                        <ul class='PersonalDetails'>
-                            <li>Bachelor's Degree Computer Systems</li>
-                            <li>Microsoft Certified Professional</li>
-                            <li>Network Certified Professional</li>
-                            <li>VMware vSphere</li>
-                        </ul>
-                        <h2>Programming</h2>
-                        <div class='underline'></div>
-                        <h6>Ordered by most recently used</h6>
-                        <ul class='LeftSideDetails'>
-                            <li>Python (daily)</li>
-                            <li>HTML, CSS, JavaScript (daily)</li>
-                            <li>PHP (daily)</li>
-                            <li>Bash/CShell (daily)</li>
-                            <li>NodeJs</li>
-                            <li>Golang</li>
-                            <li>C#</li>
-                            <li>Classic ASP</li>
-                            <li>Perl</li>
-                            <li>C/C++</li>
-                            <li>Java</li>
-                            <li>Ansible, Chef, Cfengine, Puppet DSL</li>
-                        </ul>
-                        <h2>Recognitions</h2>
-                        <div class='underline'></div>
-                        <ul class='LeftSideDetails'>
-                            <li>Division recognition reward for first sites deployment of Kerberos NFS<br/><br/></li>
-                            <li>Intel Shannon Recognition award for Design and Implementation of offsite development Centre<br/><br/></li>
-                            <li>Division recognition reward for first Step Delivering High Availability Solution for Cloud Native Deployments</li>
-                        </ul>                    
+                <footer></footer>
+            </section>
+            <section class="page2">
+                <div class="watermark">cv.fio.ie</div>
+                <div class="headerMarkTop no-print"></div>
+                <div class="headerMarkRight1 no-print"></div>
+                <div class="headerMarkRight2 no-print"></div>
+                <div class='ResumePage'>
+                    <div class='ResumeBody'>                
+                        <div class='ResumeBodyLeft'>
+                            <h2>Interests</h2>
+                            <div class='underline'></div>
+                            <h6 class="sidebar">R & R</h6>
+                            <ul class='LeftSideDetails'>
+                                <li>I have done extensive travelling around Europe, Asia and Central America</li>
+                                <li>I have lived in Germany and Portugal</li>
+                            </ul>
+                            <h6 class="sidebar">Computers and Open Source</h6>
+                            <ul class='LeftSideDetails'>
+                                <li><a href='https://www.fio.ie'>Website development</a></li>
+                                <li><a href='https://github.com/dmzoneill/filebotpp'>C# WPF Application development</a></li>
+                                <li><a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience in mobile phone applications - Android/IOS/Windows</a></li>
+                                <li>I developed android apps for AIB Banking, Bus Eireann, and Meteor Usage</li>
+                                <li>Synology download Assistance Google Chrome plugin</li>
+                                <li>Open source PHP bulletin board system EvolutionBB</li>
+                                <li>Crypto Currency</li>
+                                <li class="nobullet">
+                                    <ul class='sublist'>
+                                        <li><a href='https://github.com/jaggedsoft/php-binance-api'>PHP Binance API</a></li>
+                                        <li>PHP Unit testing and validation</li>
+                                        <li><a href='https://github.com/jaggedsoft/node-binance-api'>Node Binance API</a></li>
+                                        <li>NodeJs Mocha Unit testing and coverage validation</li>
+                                    </ul>
+                                </li>
+                                <li>Ashtanga Yoga Cork</li>
+                                <li class="nobullet">
+                                    <ul class='sublist'>
+                                        <li><a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a></li>
+                                        <li>Booking and payment system</li>
+                                        <li><a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi - Automated door opener and heating system</a></li>
+                                        <li><a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> / <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <h2>References</h2>
+                            <div class='underline'></div>
+                            <ul class='ReferenceName'>
+                                <li><a href='https://www.linkedin.com/in/gary-quinn-7a760489/'>Gary Quinn (Intel)</a></li>
+                            </ul>
+                            <div class='ReferenceDetails'>
+                                <div class='ReferenceRole'>Chip Design Automation Engineer</div>
+                                <div class='ReferenceNumber'><a href='tel:00353868187493'>+353 86 818 7493</a></div>
+                                <div class='ReferenceEmail'><a href='mailto:gary.quinn@intel.com'>gary.quinn@intel.com</a></div>
+                            </div>
+                            <ul class='ReferenceName'>
+                                <li><a href='https://www.linkedin.com/in/stephenbergin/'>Stephen Bergin (Intel)</a></li>
+                            </ul>
+                            <div class='ReferenceDetails'>
+                                <div class='ReferenceRole'>R&D Lab Manager</div>
+                                <div class='ReferenceNumber'><a href='tel:00353868520437'>+353 86 852 0437</a></div>
+                                <div class='ReferenceEmail'><a href='mailto:stephen.bergin@intel.com'>stephen.bergin@intel.com</a></div>
+                            </div>
+                            <ul class='ReferenceName'>
+                                <li><a href='https://www.linkedin.com/in/pallavbhansali/'>Pallav Bhansali (Intel)</a></li>
+                            </ul>
+                            <div class='ReferenceDetails'>
+                                <div class='ReferenceRole'>Software Engineering Manager</div>
+                                <div class='ReferenceNumber'><a href='tel:00353861022235'>+353 86 102 2235</a></div>
+                                <div class='ReferenceEmail'><a href='mailto:pallav.bhansali@intel.com'>pallav.bhansali@intel.com</a></div>
+                            </div>
+                            <ul class='ReferenceName'>
+                                <li><a href='https://www.linkedin.com/in/colin-byrne-23b19425/'>Colin Byrne (Intel)</a></li>
+                            </ul>
+                            <div class='ReferenceDetails'>
+                                <div class='ReferenceRole'>Solutions Architect</div>
+                                <div class='ReferenceNumber'><a href='tel:00353876468560'>+353 87 646 8560</a></div>
+                                <div class='ReferenceEmail'><a href='mailto:colin.s.byrne@dell.com'>colin.s.byrne@dell.com</a></div>
+                            </div>
+                            <ul class='ReferenceName'>
+                                <li>Clem O Donnell (University of Limerick)</li>
+                            </ul>
+                            <div class='ReferenceDetails'>
+                                <div class='ReferenceRole'>Learning Center Administrator</div>
+                                <div class='ReferenceNumber'><a href='tel:00353860869392'>+353 86 086 9392</a></div>
+                                <div class='ReferenceEmail'><a href='mailto:clem.odonnell@ul.ie'>clem.odonnell@ul.ie</a></div>
+                            </div>
+                        </div>
+                        <div class='ResumeBodyRight'>
+                            <div class='Job'>                        
+                                <div class='JobBody'>
+                                    <h6>Operations</h6>
+                                    <ul class='JobDetails'>    
+                                        <li>ITIL Incident Specialist LvL4 / Request Specialist LvL4</li>
+                                        <li>Support 1.5K~ SLES production servers across 16 sites in GER/Russia</li>
+                                        <li>Cfengine Regional Service Owner aligning to global operations - 42k~ servers</li>
+                                        <li>Global Project Owner for Cfengine 2 retirement</li>
+                                        <li>Sudo Regional Service Owner</li>
+                                        <li>Backup Regional Service Owner for 12 production VCenter Clusters</li>
+                                        <li>Regional Datacenter Services consolidation into Leixlip/Nizhny Hub Sites</li>
+                                        <li>Kerberos NFS in GER - Compute Design Cloud Global Data Accessibility (GDA)</li>
+                                        <li>Offsite Development Center, IT/Network Infrastructure Design and Implementation, delivered IT infrastructure to support cloud provisioning</li>
+                                        <li>Galileo Lab Services Deployment and Support Leixlip - Quark SoC</li>
+                                        <li>Supporting Build forge, Git, Subversion, Jenkins continuous integration</li>
+                                        <li>Data Center Downtimes, NetApp Filer Migrations</li>
+                                        <li>Support for all Linux, BSD, and Windows operating systems</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2008 - 2012</div>
+                                    <div class='JobTitle'>
+                                        <h3>Instructor</h3>
+                                        <h6>University of Limerick</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <ul class='JobDetails'>    
+                                        <li>I partook in delivering Java learning courses as part of peer support learning program.</li>
+                                        <li>Prepared and delivered targeted PHP, C++, and Java sessions for undergraduates, graduates, and pre and post doctorates.</li>
+                                        <li>Drop in support for imperative/declarative programming problems</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2010</div>
+                                    <div class='JobTitle'>
+                                        <h3>UNIX Systems Programmer (Intern)</h3>
+                                        <h6>Intel</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <ul class='JobDetails'>    
+                                        <li>Provided Linux compute/lab support in Shannon for 300 customers</li>
+                                        <li>Managed extensive lab hypervisor infrastructure</li>
+                                        <li>Data Center Downtime, Filer Migrations</li>
+                                        <li>Clearquest Perl, PHP, C++ MySQL lab custom ISC DHCPD solution</li>
+                                        <li>Perl men and mice DNS IPAM management solution for lab DDNS</li>
+                                        <li>Altiris hardware dependent imaging solution based upon clonezilla</li>
+                                        <li>Took on responsibilities of two Senior Systems Programmers, windows and UNIX during their annual leave and sabbatical leave.</li>
+                                        <li>VBscript low cost digital signage solution for Shannon</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2005 - 2006</div>
+                                    <div class='JobTitle'>
+                                        <h3>Manager</h3>
+                                        <h6>Click Here LTD Startup</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <ul class='JobDetails'>    
+                                        <li>Booking keeping - I maintained financial and inventory records, forecasting, budgeting, utilities, banking.</li>
+                                        <li>People management</li>
+                                        <li>Network administrator - physical installation and configuration</li>
+                                        <li>Systems administrator - installation and configuration</li>
+                                        <li>Painting Electrical Work, 80+ hours week for 3 months</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                            <div class='underline'></div>
+                            <div class='Job'>
+                                <div class='JobHeader'>
+                                    <div class='JobPeriod'>2003 - 2005</div>
+                                    <div class='JobTitle'>
+                                        <h3>IT Technician</h3>
+                                        <h6>Nethouse LTD</h6>
+                                    </div>
+                                </div>
+                                <div class='JobBody'>
+                                    <ul class='JobDetails'>    
+                                        <li>Network administrator - physical installation and configuration</li>
+                                        <li>Systems administrator - installation and configuration</li>
+                                    </ul>
+                                </div>                        
+                            </div>
+                        </div>                
                     </div>
-                    <div class='ResumeBodyRight'>
-                        <h2>Experience</h2>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>January 2019 - Present</div>
-                                <div class='JobTitle'>
-                                    <h3>Site Reliability Engineer</h3>
-                                    <h6>Canonical (Ubuntu Linux)</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <h6>Engineer, Bootstack</h6>
-                                <ul class='JobDetails'>    
-                                    <li>50 Operations / 50 Development </li>
-                                    <li>Working on private cloud offerings for Canonical customers across a plethora of use-case requirements</li>
-                                    <li>Day to day technologies include, juju, maas, landscape, openstack, kubernetes and a number of networking and storage solutions such as ceph, openvswitch & contrail</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>Sept 2018 - March 2019</div>
-                                <div class='JobTitle'>
-                                    <h3>File System Engineer</h3>
-                                    <h6>Dell EMC</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <h6>File system Engineer, Data Domain Protection</h6>
-                                <ul class='JobDetails'>    
-                                    <li>Working on core debug analysis Data Domain product</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>2014 - Sept 2018</div>
-                                <div class='JobTitle'>
-                                    <h3>Network Software Engineer</h3>
-                                    <h6>Intel</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <h6>Containers orchestration team scrum master & technical lead</h6>
-                                <ul class='JobDetails'>
-                                    <li>Working on Kubernetes with Docker, CNI, Etcd & flannel</li>
-                                    <li>CNI development in Golang for the support of DPDK/SRIOV/VHost User and Bonding.</li>
-                                    <li>CPU Manager for Kubernetes Development in Python</li>
-                                    <li>CI/CD Jenkins for build automation with Ansible</li>
-                                    <li>Openstack Kuryr - OVS</li>
-                                    <li>Clearwater IMS on kubernetes and AWS/GCP</li>
-                                    <li>Software Legal Compliance ProtexIP - Code Center</li>
-                                    <li><a href='https://networkbuilders.intel.com/experience-kits'>https://networkbuilders.intel.com/experience-kits</a></li>                        
-                                </ul>
-                            </div>   
-                            <div class='JobBody'>
-                                <h6>Technical lead for configuration management Open Network Software 2.0</h6>
-                                <ul class='JobDetails'>    
-                                    <li>Linux Kernel and Systemd-NetworkD,</li>
-                                    <li>Chef configuration of system-networkd</li>
-                                    <li>Systemd-networkd C - L2 / L3 FM6k / FM10K Chipsets</li>
-                                    <li>LAG / Port State / Port Attributes / UFD / FDB / QOS / VLAN</li>
-                                </ul>
-                            </div>      
-                            <div class='JobBody'>
-                                <h6>Technical lead for infrastructure of Open Network Software 1.2</h6>
-                                <ul class='JobDetails'>    
-                                    <li>C++, SWIG, Python, M4 Autotools, google protocol buffers and Zeromq</li>
-                                </ul>
-                            </div>                   
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>2012 - 2014</div>
-                                <div class='JobTitle'>
-                                    <h3>UNIX Systems Programmer</h3>
-                                    <h6>Intel</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <h6>Development</h6>
-                                <ul class='JobDetails'>    
-                                    <li>Puppet, Perl, Bash, CShell, Vbscript, Jscript post deployment configuration for internal lab cloud provisioning solution (Windows/Linux/BSD)</li>
-                                    <li>OpenStack post provisioning configuration with Puppet</li>
-                                    <li>Openstack deployment scripts in Bash</li>
-                                    <li>PHP NetApp Storage Usage Analytics Web Service</li>
-                                    <li>C# .Net asynchronous library for Service Now ticket creation outlook plugin</li>
-                                </ul>
-                            </div>                        
-                        </div>                    
-                    </div>                
                 </div>
-            </div>
-            <footer></footer>
-        </section>
-        <section>
-            <div class="watermark">cv.fio.ie</div>
-            <div class='ResumePage'>
-                <div class='ResumeBody'>                
-                    <div class='ResumeBodyLeft'>
-                        <h2>Interests</h2>
-                        <div class='underline'></div>
-                        <h6>R & R</h6>
-                        <ul class='LeftSideDetails'>
-                            <li>I have done extensive travelling around Europe</li>
-                            <li>I have lived in Germany and Portugal</li>
-                        </ul>
-                        <h6>Computers and Open Source</h6>
-                        <ul class='LeftSideDetails'>
-                            <li><a href='https://www.fio.ie'>Website development</a></li>
-                            <li><a href='https://github.com/dmzoneill/filebotpp'>C# WPF Application development</a></li>
-                            <li><a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience in mobile phone applications - Android/IOS/Windows</a></li>
-                            <li>I developed android apps for AIB Banking, Bus Eireann, and Meteor Usage</li>
-                            <li>Synology download Assistance Google Chrome plugin</li>
-                            <li>Open source PHP bulletin board system EvolutionBB</li>
-                            <li>Crypto Currency</li>
-                            <li>
-                                <ul class='sublist'>
-                                    <li><a href='https://github.com/jaggedsoft/php-binance-api'>PHP Binance API</a></li>
-                                    <li>PHP Unit testing and validation</li>
-                                    <li><a href='https://github.com/jaggedsoft/node-binance-api'>Node Binance API</a></li>
-                                    <li>NodeJs Mocha Unit testing and coverage validation</li>
-                                </ul>
-                            </li>
-                            <li>Ashtanga Yoga Cork</li>
-                            <li>
-                                <ul class='sublist'>
-                                    <li><a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a></li>
-                                    <li>Booking and payment system</li>
-                                    <li><a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi - Automated door opener and heating system</a></li>
-                                    <li><a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> / <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <h2>References</h2>
-                        <div class='underline'></div>
-                        <ul class='ReferenceName'>
-                            <li>Gary Quinn (Intel)</li>
-                        </ul>
-                        <div class='ReferenceDetails'>
-                            <div class='ReferenceRole'>EMEA Linux Compute Service Owner</div>
-                            <div class='ReferenceNumber'>+353 86 818 7493</div>
-                            <div class='ReferenceEmail'>gary.quinn@intel.com</div>
-                        </div>
-                        <ul class='ReferenceName'>
-                            <li>Stephen Bergin (Intel)</li>
-                        </ul>
-                        <div class='ReferenceDetails'>
-                            <div class='ReferenceRole'>Shannon IT Manager</div>
-                            <div class='ReferenceNumber'>+353 86 852 0437</div>
-                            <div class='ReferenceEmail'>stephen.c.bergin@intel.com</div>
-                        </div>
-                        <ul class='ReferenceName'>
-                            <li>Pallav Bhansali (Intel)</li>
-                        </ul>
-                        <div class='ReferenceDetails'>
-                            <div class='ReferenceRole'>Galileo Labs Manager Leixlip - Quark SoC</div>
-                            <div class='ReferenceNumber'>+353 86 102 2235</div>
-                            <div class='ReferenceEmail'>pallav.bhansali@intel.com</div>
-                        </div>
-                        <ul class='ReferenceName'>
-                            <li>Colin Byrne (Intel)</li>
-                        </ul>
-                        <div class='ReferenceDetails'>
-                            <div class='ReferenceRole'>EMEA Windows Servers Services Team</div>
-                            <div class='ReferenceNumber'>+353 87 646 8560</div>
-                            <div class='ReferenceEmail'>colin.s.byrne@intel.com</div>
-                        </div>
-                        <ul class='ReferenceName'>
-                            <li>Clem O Donnell (University of Limerick)</li>
-                        </ul>
-                        <div class='ReferenceDetails'>
-                            <div class='ReferenceRole'>Learning Center Administrator</div>
-                            <div class='ReferenceNumber'>+353 86 086 9392</div>
-                            <div class='ReferenceEmail'>clem.odonnell@ul.ie</div>
-                        </div>
-                    </div>
-                    <div class='ResumeBodyRight'>
-                        <div class='Job'>                        
-                            <div class='JobBody'>
-                                <h6>Operations</h6>
-                                <ul class='JobDetails'>    
-                                    <li>ITIL Incident Specialist LvL4 / Request Specialist LvL4</li>
-                                    <li>Support 1.5K~ SLES production servers across 16 sites in GER/Russia</li>
-                                    <li>Cfengine Regional Service Owner aligning to global operations - 42k~ servers</li>
-                                    <li>Global Project Owner for Cfengine 2 retirement</li>
-                                    <li>Sudo Regional Service Owner</li>
-                                    <li>Backup Regional Service Owner for 12 production VCenter Clusters</li>
-                                    <li>Regional Datacenter Services consolidation into Leixlip/Nizhny Hub Sites</li>
-                                    <li>Kerberos NFS in GER - Compute Design Cloud Global Data Accessibility (GDA)</li>
-                                    <li>Offsite Development Center, IT/Network Infrastructure Design and Implementation, delivered IT infrastructure to support cloud provisioning</li>
-                                    <li>Galileo Lab Services Deployment and Support Leixlip - Quark SoC</li>
-                                    <li>Supporting Build forge, Git, Subversion, Jenkins continuous integration</li>
-                                    <li>Data Center Downtimes, NetApp Filer Migrations</li>
-                                    <li>Support for all Linux, BSD, and Windows operating systems</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>Part Time 2008 - 2012</div>
-                                <div class='JobTitle'>
-                                    <h3>Instructor</h3>
-                                    <h6>University of Limerick</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <ul class='JobDetails'>    
-                                    <li>I partook in delivering Java learning courses as part of peer support learning program.</li>
-                                    <li>Prepared and delivered targeted PHP, C++, and Java sessions for undergraduates, graduates, and pre and post doctorates.</li>
-                                    <li>Drop in support for imperative/declarative programming problems</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>Intern 2010</div>
-                                <div class='JobTitle'>
-                                    <h3>UNIX Systems Programmer</h3>
-                                    <h6>Intel</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <ul class='JobDetails'>    
-                                    <li>Provided Linux compute/lab support in Shannon for 300 customers</li>
-                                    <li>Managed extensive lab hypervisor infrastructure</li>
-                                    <li>Data Center Downtime, Filer Migrations</li>
-                                    <li>Clearquest Perl, PHP, C++ MySQL lab custom ISC DHCPD solution</li>
-                                    <li>Perl men and mice DNS IPAM management solution for lab DDNS</li>
-                                    <li>Altiris hardware dependent imaging solution based upon clonezilla</li>
-                                    <li>Took on responsibilities of two Senior Systems Programmers, windows and UNIX during their annual leave and sabbatical leave.</li>
-                                    <li>VBscript low cost digital signage solution for Shannon</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>2005 - 2006</div>
-                                <div class='JobTitle'>
-                                    <h3>Manager</h3>
-                                    <h6>Click Here LTD Startup</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <ul class='JobDetails'>    
-                                    <li>Booking keeping - I maintained financial and inventory records, forecasting, budgeting, utilities, banking.</li>
-                                    <li>People management</li>
-                                    <li>Network administrator - physical installation and configuration</li>
-                                    <li>Systems administrator - installation and configuration</li>
-                                    <li>Painting Electrical Work, 80+ hours week for 3 months</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                        <div class='underline'></div>
-                        <div class='Job'>
-                            <div class='JobHeader'>
-                                <div class='JobPeriod'>2003 - 2005</div>
-                                <div class='JobTitle'>
-                                    <h3>IT Technician</h3>
-                                    <h6>Nethouse LTD</h6>
-                                </div>
-                            </div>
-                            <div class='JobBody'>
-                                <ul class='JobDetails'>    
-                                    <li>Network administrator - physical installation and configuration</li>
-                                    <li>Systems administrator - installation and configuration</li>
-                                </ul>
-                            </div>                        
-                        </div>
-                    </div>                
-                </div>
-            </div>
-            <footer></footer>
-        </section>
+                <footer></footer>
+            </section>
+        </div>
         <a href="javascript:window.print();" class="float-print no-print">
             <i style="font-size:32px; margin-top:13px;" class="fa fa-file-pdf-o"></i>
         </a>
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            
+            ga('create', 'UA-1014155-1', 'auto');
+            ga('send', 'pageview');
+        </script>
     </body>
 </html>
-

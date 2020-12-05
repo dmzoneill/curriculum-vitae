@@ -70,20 +70,6 @@
     src: local('Kanit ExtraLight'), local('Kanit-ExtraLight'), url(https://fonts.gstatic.com/s/kanit/v7/nKKU-Go6G5tXcr5aOhWnVaE.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-            
-@media print {
-    body, section {
-        margin: 0px !important;
-        padding: 0px !important;
-        box-shadow: 0 0 0 rgba(255,255,255,255) !important;
-    }
-    footer {
-        page-break-after: always;
-    }
-    .no-print, .no-print * {
-        display: none !important;
-    }
-}
 
 * {
     -webkit-font-smoothing: antialiased;
@@ -94,6 +80,7 @@ body {
     background: rgb(204,204,204); 
     margin: 0px;
     padding: 10px;
+    height: 100%;
 }
 
 section {
@@ -105,6 +92,36 @@ section {
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
     width: 21cm;
     height: 29.7cm; 
+}
+
+@media (min-width: 50cm) {
+    div.pages {
+        margin: auto;
+        width: 47cm; 
+    }
+
+    section.page1 {
+        float: left;
+    }
+
+    section.page2 {
+        float: right;
+    }
+}
+
+@media (max-width: 49cm) {
+    div.pages {
+        margin: auto;
+        width: 21cm; 
+    }
+
+    section.page1 {
+        float: none;
+    }
+
+    section.page2 {
+        float: none;
+    }
 }
 
 .ResumePage {
@@ -204,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
     margin-top: -10px;
     margin-bottom: -10px;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 28pt;
 }
 
@@ -256,6 +273,22 @@ h6 {
     letter-spacing: 1px;
 }
 
+.JobTitle h6 {
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 10pt;
+    text-shadow: 1px 0px #000000;
+    letter-spacing: 1px;
+}
+
+h6.sidebar {
+    margin-top: 5px;
+    font-weight: 900;
+    font-size: 11pt;
+    text-shadow: 1px 0px #000000;
+    letter-spacing: 1px;
+}
+
 .ResumeHeaderRight h6 {
     color: #2e74b5;
 }
@@ -269,11 +302,10 @@ h6 {
     margin-bottom: 0px;
 }
 
-.ReferenceEmail {
-    color: #2e74b5;
-    text-decoration: underline;
-    font-weight: 600;
-    font-size: 9pt;
+.ReferenceEmail a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 11pt;
 }
 
 .ReferenceDetails {
@@ -295,6 +327,10 @@ ul.PersonalDetails li, ul.LeftSideDetails li, ul.ReferenceName li, ul.JobDetails
 ul.ReferenceName li {
     font-weight: 900;
     text-shadow: 1px 0px #000000;
+}
+
+li.nobullet {
+    list-style-type: none;
 }
 
 .sublist {
@@ -323,7 +359,7 @@ ul.ReferenceName li {
 .JobHeader {
     width: 100%;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .JobPeriod {
@@ -364,6 +400,7 @@ ul.ReferenceName li {
     text-align: center;
     box-shadow: 2px 2px 3px #999;
 }
+
 .watermark {
     position: absolute;
     margin-top: 13cm;
@@ -377,4 +414,38 @@ ul.ReferenceName li {
     color: #2e74b5;
     transform: rotate(-45deg);
     user-select: none;
+}
+
+.headerMarkTop, .headerMarkRight1, .headerMarkRight2 {
+    position: absolute;
+    z-index: 1000;
+    background-color: #2e74b5;
+    opacity: 0.15;
+}
+
+.headerMarkTop {
+    height: 0.3cm;
+    width: 5cm;
+    margin-top: -1.04cm;
+    margin-left: 13.5cm;  
+}
+
+.headerMarkRight1 {
+    margin-top: 7cm;
+    width: 0.3cm;
+    height: 5cm;
+    margin-left: 21.75cm;
+}
+
+.headerMarkRight2 {
+    margin-top: 22cm;
+    width: 0.3cm;
+    height: 5cm;
+    margin-left: 21.75cm;
+}
+
+.photo {
+    position: absolute;
+    margin-top: -0.5cm;
+    margin-left: 8.5cm;
 }
