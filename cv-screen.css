@@ -125,12 +125,12 @@ section {
 @media (max-width: 49cm) {
     div.container {
         margin: auto;
-        width: 21cm;
+        width: 23.1cm;
     }
 
     div.pages {
         margin: auto;
-        width: 21cm; 
+        width: 23.1cm; 
         height: 64.5cm;
     }
 
