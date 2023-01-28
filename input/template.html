@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="{lang}">
+    <head>
+        <meta charset="{charset}">
+        <meta property="og:title" content="{og:title}">
+        <meta property="og:description" content="{og:description}">
+        <meta property="og:image" content="{og:image}">
+        <meta property="og:image:type" content="{og:image:type}" />
+        <meta property="og:image:width" content="{og:image:width}" />
+        <meta property="og:url" content="{og:url}">
+        <title>{title}</title>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/cv-screen.css">
+        <link rel="stylesheet" href="css/cv-print.css" media="print">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/cv.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id={gtag}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '{gtag}');
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="pages">
+                <section class="page1">
+                    <div class="watermark">{watermark}</div>
+                    <div class="headerMarkTop no-print"></div>
+                    <div class="photo no-print"><img src='{candidate-image}' width='122' alt='candidate photo'/></div>
+                    <div class="headerMarkRight1 no-print"></div>
+                    <div class="headerMarkRight2 no-print"></div>
+                    <div class='ResumePage'>
+                        <div class='ResumeHeader'>
+                            <div class='ResumeHeaderLeft'>
+                                <h1>{candidate-name}</h1>
+                                <h3 class='role'>{current-role}</h3>
+                                <previous-roles>
+                                    <h4 class='role'>{list_item}</h4>
+                                </previous-roles>
+                            </div>
+                            <div class='ResumeHeaderRight'>
+                                <h6>Linkedin</h6>
+                                <a href='{linkedin-url}'>{linkedin-url}</a>
+                                <h6>Github / Launchpad</h6>
+                                <a href='{github-url}'>{github-url}</a><br/>
+                                <a href='{launchpad-url}'>{launchpad-url}</a>
+                            </div>
+                        </div>
+                        <div class='ResumeBody'>
+                            <div class='ResumeBodyLeft'>
+                                <h2>Personal Details</h2>
+                                <div class='underline'></div>
+                                <h6 class="sidebar">Nationality</h6>
+                                <div class='PersonalDetails'>{nationality}</div>
+                                <h6 class="sidebar">Address</h6>
+                                <div class='PersonalDetailsAddress'>
+                                    <a href="{maps-url}">
+                                        <address>
+                                            {list_item}<br/>
+                                        </address>
+                                    </a>
+                                </div>
+                                <h6 class="sidebar">Phone</h6>
+                                <div class='PersonalDetails'>
+                                    <a href="{phone-url}">{phone}</a>
+                                </div>
+                                <h6 class="sidebar">Email</h6>
+                                <div class='PersonalDetails'>
+                                    <a href="{email-url}">{email}</a><br/><br/>
+                                </div>
+                                <h2>Education</h2>
+                                <div class='underline'></div>
+                                <ul class='PersonalDetails'>
+                                    <education>
+                                        <li>{list_item}</li>
+                                    </education>
+                                </ul>
+                                <h2>Programming</h2>
+                                <div class='underline'></div>
+                                <h6 class="sidebar">Ordered by most recently used</h6>
+                                <ul class='LeftSideDetails'>
+                                    <programming-languages>
+                                        <li>{list_item}</li>
+                                    </programming-languages>
+                                </ul>
+                                <h2>Recognitions</h2>
+                                <div class='underline'></div>
+                                <ul class='LeftSideDetails'>
+                                    <recognitions>
+                                        <li>{list_item}<br/><br/></li>
+                                    </recognitions>
+                                </ul>                    
+                            </div>
+                            <div class='ResumeBodyRight'>
+                                <h2>Experience</h2>
+                                <page1>
+                                    <div class='underline'></div>
+                                    <div class='Job'>
+                                        <div class='JobHeader'>
+                                            <div class='JobPeriod'>{period}</div>
+                                            <div class='JobTitle'>
+                                                <h3>{last-role}</h3>
+                                                <h6>{company}</h6>
+                                            </div>
+                                        </div>
+                                        <div class='JobBody'>
+                                            <roles>
+                                                <h6>{title}</h6>
+                                                <ul class='JobDetails'>
+                                                    <details>
+                                                        <li>{list_item}</li>
+                                                    </details>
+                                                </ul>
+                                            </roles>  
+                                        </div>                        
+                                    </div>
+                                </page1>                                           
+                            </div>                
+                        </div>
+                    </div>
+                    <footer></footer>
+                </section>
+                <section class="page2">
+                    <div class="watermark">{watermark}</div>
+                    <div class="headerMarkTop no-print"></div>
+                    <div class="headerMarkRight1 no-print"></div>
+                    <div class="headerMarkRight2 no-print"></div>
+                    <div class='ResumePage'>
+                        <div class='ResumeBody'>                
+                            <div class='ResumeBodyLeft'>
+                                <h2>Interests</h2>
+                                <div class='underline'></div>
+                                <h6 class="sidebar">R & R</h6>
+                                <ul class='LeftSideDetails'>
+                                    <interests-rr>
+                                        <li>{list_item}</li>
+                                    </interests-rr>                                    
+                                </ul>
+                                <h6 class="sidebar">Computers and Open Source</h6>
+                                <ul class='LeftSideDetails'>
+                                    <interests-oss>
+                                        <li>{list_item}
+                                            <ul class='sublist'>
+                                                <children>                                                
+                                                    <li>{list_item}</li>                                                
+                                                </children>
+                                            </ul>
+                                        </li>
+                                    </interests-oss>                                    
+                                </ul>
+                                <h2>References</h2>
+                                <div class='underline'></div>
+                                <references>
+                                    <ul class='ReferenceName'>
+                                        <li><a href='{url}'>{name}</a></li>
+                                    </ul>
+                                    <div class='ReferenceDetails'>
+                                        <div class='ReferenceRole'>{title}</div>
+                                        <div class='ReferenceNumber'><a href='{phone-url}'>{phone}</a></div>
+                                        <div class='ReferenceEmail'><a href='mailto:{email}'>{email}</a></div>
+                                    </div>
+                                </references>
+                            </div>
+                            <div class='ResumeBodyRight'>                                
+                                <page2>
+                                    <div class='underline'></div>
+                                    <div class='Job'>
+                                        <div class='JobHeader'>
+                                            <div class='JobPeriod'>{period}</div>
+                                            <div class='JobTitle'>
+                                                <h3>{last-role}</h3>
+                                                <h6>{company}</h6>
+                                            </div>
+                                        </div>
+                                        <div class='JobBody'>
+                                            <roles>
+                                                <h6>{title}</h6>
+                                                <ul class='JobDetails'>
+                                                    <details>
+                                                        <li>{list_item}</li>
+                                                    </details>
+                                                </ul>
+                                            </roles>  
+                                        </div>                        
+                                    </div>
+                                </page2> 
+                            </div>                
+                        </div>
+                    </div>
+                    <footer></footer>
+                </section>
+            </div>
+        </div>
+        <a href="javascript:window.print();" class="float-print no-print">
+            <i style="font-size:32px; margin-top:13px;" class="fa fa-file-pdf-o"></i>
+        </a>
+    </body>
+</html>

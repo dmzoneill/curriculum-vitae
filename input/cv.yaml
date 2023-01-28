@@ -1,0 +1,244 @@
+---
+lang: en
+charset: UTF-8
+og:title: David O Neill - Curriculum Vitae
+og:description: SysOps, DevOps, SRE and Software Developer
+og:image: "//cv.fio.ie/og-image.png"
+og:image:type: image/png
+og:image:width: '1200'
+og:image:height: '600'
+og:url: "//cv.fio.ie"
+title: David O Neill - Curriculum Vitae
+watermark: cv.fio.ie
+candidate-name: David O Neill
+candidate-image: media/photo.png
+nationality: Irish (freely work in E.U)
+maps-url: https://goo.gl/maps/gwKzXpfeCKoBwTWv8
+address:
+- Apt 5 Camden Wharf
+- Camden Quay
+- Cork
+- Ireland
+- T23PF65
+phone: "+353 86 193 8787"
+phone-url: tel:00353861938787
+email: dmz.oneill@gmail.com
+email-url: mailto:dmz.oneill@gmail.com
+date-of-birth: 26/03/1984
+linkedin-url: https://www.linkedin.com/in/dmzoneill
+github-url: https://github.com/dmzoneill
+launchpad-url: https://code.launchpad.net/~dmzoneill/+git
+roles:
+- Principal Software Engineer
+- Site Reliability Engineer
+- Dev Ops Engineer
+- Cloud Engineer
+- Systems Engineer
+education:
+- Bachelor's Degree Computer Systems
+- Microsoft Certified Professional
+- Network Certified Professional
+- VMware vSphere
+programming-languages:
+- Python (daily)
+- PHP (daily)
+- Bash/CShell (daily)
+- HTML, CSS, JavaScript (daily)
+- Java (Android)
+- Swift (IOS)
+- NodeJs
+- C#
+- Golang
+- Classic ASP
+- Perl
+- C/C++
+- Ansible, Chef, Cfengine, Puppet, Terraform DSL
+recognitions:
+- Division recognition reward for first sites deployment of Kerberos NFS
+- Intel Shannon Recognition award for Design and Implementation of offsite development
+  Centre
+- Division recognition reward for first Step Delivering High Availability Solution
+  for Cloud Native Deployments
+interests-rr:
+- I have done extensive traveling around Europe, Asia and Central America
+- I have lived in Germany and Portugal
+interests-oss:
+- item: "<a href='https://www.fio.ie'>Website development</a>"
+- item: "<a href='https://github.com/dmzoneill/filebotpp'>C# WPF Application development</a>"
+- item: "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience
+  in mobile phone applications - Android/IOS/Windows</a>"
+- item: I developed android apps for AIB Banking, Bus Eireann, and Meteor Usage
+- item: Synology download Assistance Google Chrome plugin
+- item: Open source PHP bulletin board system EvolutionBB
+- item: Crypto Currency
+  list:
+  - "<a href='https://github.com/jaggedsoft/php-binance-api'>PHP Binance API</a>"
+  - PHP Unit testing and validation
+  - "<a href='https://github.com/jaggedsoft/node-binance-api'>Node Binance API</a>"
+  - NodeJs Mocha Unit testing and coverage validation
+- item: Ashtanga Yoga Cork
+  list:
+  - "<a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a>"
+  - Booking and payment system
+  - "<a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi
+    - Automated door opener and heating system</a>"
+  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a>
+    / <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS
+    apps</a>"
+references:
+- url: https://www.linkedin.com/in/gary-quinn-7a760489/
+  name: Gary Quinn (Intel)
+  title: Chip Design Automation Engineer
+  phone: "+353 86 818 7493"
+  phone-url: "tel:00353868187493"
+  email: gary.quinn@intel.com
+- url: https://www.linkedin.com/in/stephenbergin/
+  name: Stephen Bergin (Intel)
+  title: R&D Lab Manager
+  phone: "+353 86 852 0437"
+  phone-url: "tel:00353868520437"
+  email: stephen.bergin@intel.com
+- url: https://www.linkedin.com/in/pallavbhansali/
+  name: Pallav Bhansali (Intel)
+  title: Software Engineering Manager
+  phone: "+353 86 102 2235"
+  phone-url: "tel:00353861022235"
+  email: pallav.bhansali@intel.com
+- url: https://www.linkedin.com/in/colin-byrne-23b19425/
+  name: Colin Byrne (Intel)
+  title: Solutions Architect
+  phone: "+353 87 646 8560"
+  phone-url: "tel:00353876468560"
+  email: colin.s.byrne@dell.com
+- url: ''
+  name: Clem O Donnell (University of Limerick)
+  title: Learning Center Administrator
+  phone: "+353 86 086 9392"
+  phone-url: "tel:00353860869392"
+  email: clem.odonnell@ul.ie
+gtag: G-QD0JS53HFX
+pages:
+- header: Experience
+  jobs:
+  - period: May 2021 - Present
+    last-role: Principal Software Engineer
+    company: Redhat
+    roles:
+    - title: Principal Engineer, Automation analytics
+      details:
+      - Using ansible to scale IT automation; managing complex deployments and speed
+        productivity
+      - Day to day technologies include, Kubernetes, OpenShift, Docker, KVM, Ansible,
+        GitLab, Github, Jenkins, Travis, Git, Bonfire and Clowder
+      - Development consists of reactjs (frontend) & python and postgres (backend)
+  - period: Jan 2019 - April 2021
+    last-role: Site Reliability Engineer
+    company: Canonical (Ubuntu Linux)
+    roles:
+    - title: Bootstack Site Reliability Engineer
+      details:
+      - 50 Operations / 50 Development
+      - Working on private cloud offerings for Canonical customers across a plethora
+        of use-case requirements
+      - Day to day technologies include, juju, maas, landscape, openstack, kubernetes
+        and a number of networking and storage solutions such as ceph, swift, openvswitch,
+        contrail, calico & flannel
+      - Development consists of python (juju charms)
+  - period: Sept 2018 - Jan 2019
+    last-role: File System Engineer
+    company: Dell EMC
+    roles:
+    - title: File system Engineer, Data Domain Protection
+      details:
+      - Working on core debug analysis Data Domain product
+  - period: 2014 - Sept 2018
+    last-role: Network Software Engineer
+    company: Intel
+    roles:
+    - title: Containers orchestration team scrum master & technical lead
+      details:
+      - Working on Kubernetes with Docker, CNI, Etcd & flannel
+      - CNI development in Golang for the support of DPDK/SRIOV/VHost User and Bonding.
+      - CPU Manager for Kubernetes Development in Python
+      - CI/CD Jenkins for build automation with Ansible
+      - Openstack Kuryr - OVS
+      - Clearwater IMS on kubernetes and AWS/GCP
+      - Software Legal Compliance ProtexIP - Code Center
+      - "<a href='https://networkbuilders.intel.com/experience-kits'>https://networkbuilders.intel.com/experience-kits</a>"
+    - title: Technical lead for configuration management Open Network Software 2.0
+      details:
+      - Linux Kernel and Systemd-NetworkD
+      - Chef configuration of system-networkd
+      - Systemd-networkd C - L2 / L3 FM6k / FM10K Chipsets
+      - LAG / Port State / Port Attributes / UFD / FDB / QOS / VLAN
+    - title: Technical lead for infrastructure of Open Network Software 1.2
+      details:
+      - C++, SWIG, Python, M4 Autotools, google protocol buffers and Zeromq
+- header: Experience
+  jobs:
+  - period: 2012 - 2014
+    last-role: UNIX Systems Programmer
+    company: Intel
+    roles:
+    - title: Development
+      details:
+      - Puppet, Perl, Bash, CShell, Vbscript, Jscript post deployment configuration
+        for internal lab cloud provisioning solution (Windows/Linux/BSD)
+      - OpenStack post provisioning configuration with Puppet
+      - Openstack deployment scripts in Bash
+      - PHP NetApp Storage Usage Analytics Web Service
+      - C# .Net asynchronous library for Service Now ticket creation outlook plugin
+    - title: Operations
+      details:
+      - ITIL Incident Specialist LvL4 / Request Specialist LvL4
+      - Support 1.5K~ SLES production servers across 16 sites in GER/Russia
+      - Cfengine Regional Service Owner aligning to global operations - 42k~ servers
+      - Global Project Owner for Cfengine 2 retirement
+      - Sudo Regional Service Owner
+      - Backup Regional Service Owner for 12 production VCenter Clusters
+      - Regional Datacenter Services consolidation into Leixlip/Nizhny Hub Sites
+      - Kerberos NFS in GER - Compute Design Cloud Global Data Accessibility (GDA)
+      - Offsite Development Center, IT/Network Infrastructure Design and Implementation,
+        delivered IT infrastructure to support cloud provisioning
+      - Galileo Lab Services Deployment and Support Leixlip - Quark SoC
+      - Supporting Build forge, Git, Subversion, Jenkins continuous integration
+      - Data Center Downtimes, NetApp Filer Migrations
+      - Support for all Linux, BSD, and Windows operating systems
+  - period: 2008 - 2012
+    last-role: Instructor
+    company: University of Limerick
+    roles:
+    - title: ""
+      details:
+      - I partook in delivering Java learning courses as part of peer support learning
+        program.
+      - Prepared and delivered targeted PHP, C++, and Java sessions for undergraduates,
+        graduates, and pre and post doctorates.
+      - Drop in support for imperative/declarative programming problems
+  - period: '2010'
+    last-role: UNIX Systems Programmer (Intern)
+    company: Intel
+    roles:
+    - title: ""
+      details:
+      - Provided Linux compute/lab support in Shannon for 300 customers
+      - Managed extensive lab hypervisor infrastructure
+      - Data Center Downtime, Filer Migrations
+      - Clearquest Perl, PHP, C++ MySQL lab custom ISC DHCPD solution
+      - Perl men and mice DNS IPAM management solution for lab DDNS
+      - Altiris hardware dependent imaging solution based upon clonezilla
+      - Took on responsibilities of two Senior Systems Programmers, windows and UNIX
+        during their annual leave and sabbatical leave.
+      - VBscript low cost digital signage solution for Shannon
+  - period: 2005 - 2006
+    last-role: Manager
+    company: Click Here LTD Startup
+    roles:
+    - title: ""
+      details:
+      - Booking keeping - I maintained financial and inventory records, forecasting,
+        budgeting, utilities, banking.
+      - People management
+      - Network administrator - physical installation and configuration
+      - Systems administrator - installation and configuration
+      - Painting Electrical Work, 80+ hours week for 3 months
