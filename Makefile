@@ -19,10 +19,7 @@ python:
 	export output_file="$(CWD)/$@.html" && \
 	python3 $(CWD)/src/$@/cv.py
 
-lint:
-	npx standard --fix $(CWD)/input/javascript/*
-
-bump: lint
+bump: python php
 	sed "s/$(version)/$(next)/" -i version
 
 version: bump
