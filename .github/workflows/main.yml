@@ -1,5 +1,5 @@
 ---
-# comment 1
+# comment
 name: CICD
 
 on:
@@ -12,3 +12,5 @@ jobs:
   cicd:
     secrets: inherit
     uses: dmzoneill/dmzoneill/.github/workflows/dispatch.yaml@main
+    with:
+      basic: "true"
