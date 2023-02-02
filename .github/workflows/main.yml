@@ -32,6 +32,7 @@ on:
 #        if: always()
 #        run: |-
 #          curl -H 'Accept: application/vnd.github+json' -H 'Authorization: token ${{ secrets.PROFILE_HOOK }}' --request POST --data '{"event_type": "cicd-hook"}' https://api.github.com/repos/dmzoneill/dmzoneill/dispatches
+#
 
 jobs:
   cicd:
