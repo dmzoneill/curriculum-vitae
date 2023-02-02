@@ -36,4 +36,5 @@ on:
 
 jobs:
   cicd:
+    secrets: inherit
     uses: dmzoneill/dmzoneill/.github/workflows/dispatch.yaml@main
