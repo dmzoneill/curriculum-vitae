@@ -52,14 +52,7 @@ push: version
 
 lint: version
 	npm install --save-dev stylelint stylelint-config-standard
-	echo "{" > .stylelintrc.json
-	echo "\"extends\": \"stylelint-config-standard\"," >> .stylelintrc.json
-	echo "\"rules\": {" >> .stylelintrc.json
-	echo "\"selector-class-pattern\": null," >> .stylelintrc.json
-	echo "\"no-descending-specificity\": null," >> .stylelintrc.json
-	echo "\"max-line-length\": null" >> .stylelintrc.json
-	echo "}" >> .stylelintrc.json
-	echo "}" >> .stylelintrc.json
+	curl -o .stylelintrc.json https://github.com/dmzoneill/dmzoneill/tree/main/.github/linters/.stylelintrc.json?raw=true
 	npx standard --fix
 	rubocop src/ruby/cv.rb -A
 	black src/python/cv.py
