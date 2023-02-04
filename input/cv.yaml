@@ -61,24 +61,24 @@ interests-rr:
 - I have done extensive traveling around Europe, Asia and Central America
 - I have lived in Germany and Portugal
 interests-oss:
-- item: "<a href='https://www.fio.ie'>Website development</a>"
-- item: "<a href='https://github.com/dmzoneill/filebotpp'>C# WPF Application development</a>"
-- item: "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience in mobile phone applications - Android/IOS/Windows</a>"
+- item: <a href="https://www.fio.ie">Website development</a>
+- item: <a href="https://github.com/dmzoneill/filebotpp">C# WPF Application development</a>
+- item: <a href="https://play.google.com/store/apps/details?id=ie.ayc&gl=IE">Experience in mobile phone applications - Android/IOS/Windows</a>
 - item: I developed android apps for AIB Banking, Bus Eireann, and Meteor Usage
 - item: Synology download Assistance Google Chrome plugin
 - item: Open source PHP bulletin board system EvolutionBB
 - item: Crypto Currency
   list:
-  - "<a href='https://github.com/jaggedsoft/php-binance-api'>PHP Binance API</a>"
+  - <a href="https://github.com/jaggedsoft/php-binance-api">PHP Binance API</a>
   - PHP Unit testing and validation
-  - "<a href='https://github.com/jaggedsoft/node-binance-api'>Node Binance API</a>"
+  - <a href="https://github.com/jaggedsoft/node-binance-api">Node Binance API</a>
   - NodeJs Mocha Unit testing and coverage validation
 - item: Ashtanga Yoga Cork
   list:
-  - "<a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a>"
+  - <a href="https://www.ashtangayoga.ie">ashtangayoga.ie</a>
   - Booking and payment system
-  - "<a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi - Automated door opener and heating system</a>"
-  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> &nbsp; <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a>"
+  - <a href="https://github.com/dmzoneill/ashtangayogacork.ie-doorpi">RaspberryPi - Automated door opener and heating system</a>
+  - <a href="https://play.google.com/store/apps/details?id=ie.ayc&gl=IE">Android</a> &nbsp; <a href="https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150">IOS apps</a>
 references:
 - url: https://www.linkedin.com/in/gary-quinn-7a760489/
   name: Gary Quinn (Intel)
@@ -153,7 +153,7 @@ pages:
       - Openstack Kuryr - OVS
       - Clearwater IMS on kubernetes and AWS/GCP
       - Software Legal Compliance ProtexIP - Code Center
-      - "<a href='https://networkbuilders.intel.com/experience-kits'>https://networkbuilders.intel.com/experience-kits</a>"
+      - <a href="https://networkbuilders.intel.com/experience-kits">https://networkbuilders.intel.com/experience-kits</a>
     - title: Technical lead for configuration management Open Network Software 2.0
       details:
       - Linux Kernel and Systemd-NetworkD
