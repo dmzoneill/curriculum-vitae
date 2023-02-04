@@ -78,7 +78,7 @@ interests-oss:
   - "<a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a>"
   - Booking and payment system
   - "<a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi - Automated door opener and heating system</a>"
-  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> & <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a>"
+  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> &nbsp; <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a>"
 references:
 - url: https://www.linkedin.com/in/gary-quinn-7a760489/
   name: Gary Quinn (Intel)
@@ -88,7 +88,7 @@ references:
   email: gary.quinn@intel.com
 - url: https://www.linkedin.com/in/stephenbergin/
   name: Stephen Bergin (Intel)
-  title: R&D Lab Manager
+  title: R&nbsp;D Lab Manager
   phone: "+353 86 852 0437"
   phone-url: "tel:00353868520437"
   email: stephen.bergin@intel.com
@@ -122,7 +122,7 @@ pages:
       details:
       - Using ansible to scale IT automation; managing complex deployments and speed productivity
       - Day to day technologies include, Kubernetes, OpenShift, Docker, KVM, Ansible, GitLab, Github, Jenkins, Travis, Git, Bonfire and Clowder
-      - Development consists of reactjs (frontend) & python and postgres (backend)
+      - Development consists of reactjs (frontend) &nbsp; python and postgres (backend)
   - period: Jan 2019 - April 2021
     last-role: Site Reliability Engineer
     company: Canonical (Ubuntu Linux)
@@ -131,7 +131,7 @@ pages:
       details:
       - 50 Operations / 50 Development
       - Working on private cloud offerings for Canonical customers across a plethora of use-case requirements
-      - Day to day technologies include, juju, maas, landscape, openstack, kubernetes and a number of networking and storage solutions such as ceph, swift, openvswitch, contrail, calico & flannel
+      - Day to day technologies include, juju, maas, landscape, openstack, kubernetes and a number of networking and storage solutions such as ceph, swift, openvswitch, contrail, calico &nbsp; flannel
       - Development consists of python (juju charms)
   - period: Sept 2018 - Jan 2019
     last-role: File System Engineer
@@ -144,9 +144,9 @@ pages:
     last-role: Network Software Engineer
     company: Intel
     roles:
-    - title: Containers orchestration team scrum master & technical lead
+    - title: Containers orchestration team scrum master &nbsp; technical lead
       details:
-      - Working on Kubernetes with Docker, CNI, Etcd & flannel
+      - Working on Kubernetes with Docker, CNI, Etcd &nbsp; flannel
       - CNI development in Golang for the support of DPDK/SRIOV/VHost User and Bonding.
       - CPU Manager for Kubernetes Development in Python
       - CI/CD Jenkins for build automation with Ansible
