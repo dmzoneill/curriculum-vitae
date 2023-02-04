@@ -55,18 +55,15 @@ programming-languages:
 - Ansible, Chef, Cfengine, Puppet, Terraform DSL
 recognitions:
 - Division recognition reward for first sites deployment of Kerberos NFS
-- Intel Shannon Recognition award for Design and Implementation of offsite development
-  Centre
-- Division recognition reward for first Step Delivering High Availability Solution
-  for Cloud Native Deployments
+- Intel Shannon Recognition award for Design and Implementation of offsite development Centre
+- Division recognition reward for first Step Delivering High Availability Solution for Cloud Native Deployments
 interests-rr:
 - I have done extensive traveling around Europe, Asia and Central America
 - I have lived in Germany and Portugal
 interests-oss:
 - item: "<a href='https://www.fio.ie'>Website development</a>"
 - item: "<a href='https://github.com/dmzoneill/filebotpp'>C# WPF Application development</a>"
-- item: "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience
-  in mobile phone applications - Android/IOS/Windows</a>"
+- item: "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Experience in mobile phone applications - Android/IOS/Windows</a>"
 - item: I developed android apps for AIB Banking, Bus Eireann, and Meteor Usage
 - item: Synology download Assistance Google Chrome plugin
 - item: Open source PHP bulletin board system EvolutionBB
@@ -80,11 +77,8 @@ interests-oss:
   list:
   - "<a href='https://www.ashtangayoga.ie'>ashtangayoga.ie</a>"
   - Booking and payment system
-  - "<a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi
-    - Automated door opener and heating system</a>"
-  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a>
-    / <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS
-    apps</a>"
+  - "<a href='https://github.com/dmzoneill/ashtangayogacork.ie-doorpi'>RaspberryPi - Automated door opener and heating system</a>"
+  - "<a href='https://play.google.com/store/apps/details?id=ie.ayc&gl=IE'>Android</a> & <a href='https://apps.apple.com/us/app/ashtanga-yoga-cork/id1508794150'>IOS apps</a>"
 references:
 - url: https://www.linkedin.com/in/gary-quinn-7a760489/
   name: Gary Quinn (Intel)
@@ -126,10 +120,8 @@ pages:
     roles:
     - title: Principal Engineer, Automation analytics
       details:
-      - Using ansible to scale IT automation; managing complex deployments and speed
-        productivity
-      - Day to day technologies include, Kubernetes, OpenShift, Docker, KVM, Ansible,
-        GitLab, Github, Jenkins, Travis, Git, Bonfire and Clowder
+      - Using ansible to scale IT automation; managing complex deployments and speed productivity
+      - Day to day technologies include, Kubernetes, OpenShift, Docker, KVM, Ansible, GitLab, Github, Jenkins, Travis, Git, Bonfire and Clowder
       - Development consists of reactjs (frontend) & python and postgres (backend)
   - period: Jan 2019 - April 2021
     last-role: Site Reliability Engineer
@@ -138,11 +130,8 @@ pages:
     - title: Bootstack Site Reliability Engineer
       details:
       - 50 Operations / 50 Development
-      - Working on private cloud offerings for Canonical customers across a plethora
-        of use-case requirements
-      - Day to day technologies include, juju, maas, landscape, openstack, kubernetes
-        and a number of networking and storage solutions such as ceph, swift, openvswitch,
-        contrail, calico & flannel
+      - Working on private cloud offerings for Canonical customers across a plethora of use-case requirements
+      - Day to day technologies include, juju, maas, landscape, openstack, kubernetes and a number of networking and storage solutions such as ceph, swift, openvswitch, contrail, calico & flannel
       - Development consists of python (juju charms)
   - period: Sept 2018 - Jan 2019
     last-role: File System Engineer
@@ -182,8 +171,7 @@ pages:
     roles:
     - title: Development
       details:
-      - Puppet, Perl, Bash, CShell, Vbscript, Jscript post deployment configuration
-        for internal lab cloud provisioning solution (Windows/Linux/BSD)
+      - Puppet, Perl, Bash, CShell, Vbscript, Jscript post deployment configuration for internal lab cloud provisioning solution (Windows/Linux/BSD)
       - OpenStack post provisioning configuration with Puppet
       - Openstack deployment scripts in Bash
       - PHP NetApp Storage Usage Analytics Web Service
@@ -198,8 +186,7 @@ pages:
       - Backup Regional Service Owner for 12 production VCenter Clusters
       - Regional Datacenter Services consolidation into Leixlip/Nizhny Hub Sites
       - Kerberos NFS in GER - Compute Design Cloud Global Data Accessibility (GDA)
-      - Offsite Development Center, IT/Network Infrastructure Design and Implementation,
-        delivered IT infrastructure to support cloud provisioning
+      - Offsite Development Center, IT/Network Infrastructure Design and Implementation, delivered IT infrastructure to support cloud provisioning
       - Galileo Lab Services Deployment and Support Leixlip - Quark SoC
       - Supporting Build forge, Git, Subversion, Jenkins continuous integration
       - Data Center Downtimes, NetApp Filer Migrations
@@ -210,10 +197,8 @@ pages:
     roles:
     - title: ""
       details:
-      - I partook in delivering Java learning courses as part of peer support learning
-        program.
-      - Prepared and delivered targeted PHP, C++, and Java sessions for undergraduates,
-        graduates, and pre and post doctorates.
+      - I partook in delivering Java learning courses as part of peer support learning program.
+      - Prepared and delivered targeted PHP, C++, and Java sessions for undergraduates, graduates, and pre and post doctorates.
       - Drop in support for imperative/declarative programming problems
   - period: '2010'
     last-role: UNIX Systems Programmer (Intern)
@@ -227,8 +212,7 @@ pages:
       - Clearquest Perl, PHP, C++ MySQL lab custom ISC DHCPD solution
       - Perl men and mice DNS IPAM management solution for lab DDNS
       - Altiris hardware dependent imaging solution based upon clonezilla
-      - Took on responsibilities of two Senior Systems Programmers, windows and UNIX
-        during their annual leave and sabbatical leave.
+      - Took on responsibilities of two Senior Systems Programmers, windows and UNIX during their annual leave and sabbatical leave.
       - VBscript low cost digital signage solution for Shannon
   - period: 2005 - 2006
     last-role: Manager
@@ -236,8 +220,7 @@ pages:
     roles:
     - title: ""
       details:
-      - Booking keeping - I maintained financial and inventory records, forecasting,
-        budgeting, utilities, banking.
+      - Booking keeping - I maintained financial and inventory records, forecasting, budgeting, utilities, banking.
       - People management
       - Network administrator - physical installation and configuration
       - Systems administrator - installation and configuration
