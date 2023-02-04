@@ -15,17 +15,17 @@ java:
 	cd $(CWD)/src/$@/ && javac -cp ${jar_files} -s . cv.java YamlMap.java && cd - && \
 	cd $(CWD)/src/$@/ && java -cp ".:${jar_files}" cv && cd -
 
-ruby:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
-	ruby "$(CWD)/src/$@/cv.rb" 
-
 perl:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
 	export output_file="$(CWD)/out/$@.html" && \
 	perl "$(CWD)/src/$@/cv.pl" 
+
+ruby:
+	export cv_file="$(CWD)/input/cv.yaml" && \
+	export template_file="$(CWD)/input/template.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
+	ruby "$(CWD)/src/$@/cv.rb" 
 
 php:
 	export cv_file="$(CWD)/input/cv.yaml" && \
