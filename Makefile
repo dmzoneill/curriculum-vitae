@@ -52,7 +52,7 @@ push: version
 
 lint: version
 	npm install --save-dev stylelint stylelint-config-standard
-	echo "{\"extends\": \"stylelint-config-standard\"}" > .stylelintrc.json
+	echo "{\"extends\": \"stylelint-config-standard\", \"rules\": {\"selector-class-pattern\": null}}" > .stylelintrc.json
 	npx standard --fix
 	rubocop src/ruby/cv.rb -A
 	black src/python/cv.py
