@@ -39,7 +39,7 @@ python:
 	export output_file="$(CWD)/out/$@.html" && \
 	python3 $(CWD)/src/$@/cv.py
 
-bump: python php ruby
+bump:
 	sed "s/$(version)/$(next)/" -i version
 
 version: bump
@@ -49,3 +49,12 @@ version: bump
 push: version
 	git pull --rebase
 	git push -u origin main:main -f
+
+lint: version
+	npm install --save-dev stylelint stylelint-config-standard
+	echo "{\"extends\": \"stylelint-config-standard\"}" > .stylelintrc.json
+	npx standard --fix
+	rubocop src/ruby/cv.rb -A
+	black src/python/cv.py
+	npx stylelint --fix "**/*.css"
+	rm .stylelintrc.json
