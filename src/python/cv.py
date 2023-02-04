@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import os
-import yaml
 import re
+import yaml
 
 cv_details = os.getenv("cv_file")
 template = os.getenv("template_file")
