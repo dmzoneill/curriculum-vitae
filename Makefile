@@ -11,35 +11,35 @@ jar_files := "jackson-annotations-2.14.2.jar:jackson-core-2.14.1.jar:jackson-dat
 java:	
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/$@.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
 	cd $(CWD)/src/$@/ && javac -cp ${jar_files} -s . cv.java YamlMap.java && cd - && \
 	cd $(CWD)/src/$@/ && java -cp ".:${jar_files}" cv && cd -
 
 ruby:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/$@.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
 	ruby "$(CWD)/src/$@/cv.rb" 
 
 perl:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/$@.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
 	perl "$(CWD)/src/$@/cv.pl" 
 
 php:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/$@.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
 	php "$(CWD)/src/$@/cv.php" 
 
 python:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/$@.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
 	python3 $(CWD)/src/$@/cv.py
 
-bump: python php
+bump: python php ruby
 	sed "s/$(version)/$(next)/" -i version
 
 version: bump
