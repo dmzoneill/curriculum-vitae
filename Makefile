@@ -57,4 +57,5 @@ lint: version
 	rubocop src/ruby/cv.rb -A
 	black src/python/cv.py
 	npx stylelint --fix "**/*.css"
+	npx htmllint template.html
 	rm .stylelintrc.json
