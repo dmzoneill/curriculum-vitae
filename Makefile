@@ -63,4 +63,4 @@ lint: version
 	golangci-lint run --fix src/go/cv.go
 	rm .stylelintrc.json
 	php phpcs.phar src/php/cv.php
-	php phpcbf.phar src/php/cv.php
+	php phpcbf.phar -w src/php/cv.php
