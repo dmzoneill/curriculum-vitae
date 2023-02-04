@@ -57,7 +57,7 @@ lint: version
 	echo "\"rules\": {" >> .stylelintrc.json
 	echo "\"selector-class-pattern\": null," >> .stylelintrc.json
 	echo "\"no-descending-specificity\": null," >> .stylelintrc.json
-	echo "\"max-line-length\": null," >> .stylelintrc.json
+	echo "\"max-line-length\": null" >> .stylelintrc.json
 	echo "}" >> .stylelintrc.json
 	echo "}" >> .stylelintrc.json
 	npx standard --fix
