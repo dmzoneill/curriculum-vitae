@@ -1,17 +1,5 @@
 <?php
 
-/**
- * PHP version 7
- * 
- * @category cv_generator
- * @package  Template_Class
- * @author   Author <dmz.oneill@gmail.com>
- * @license  Apache2 license
- * @link     fio.ie
- * @file
- * Generate cv.php
- */
-
 $cv_details = getenv("cv_file");
 $template = getenv("template_file");
 $out_html = getenv("output_file");
@@ -20,9 +8,6 @@ $template_html = file_get_contents($template);
 $cv_yaml = file_get_contents($cv_details);
 $cv_yaml = yaml_parse($cv_yaml);
 
-/**
- * Re-usable function to replace strings or arrays of strings
- */
 function section_replace_scalars($section, $replacements)
 {
     if (stristr($section, "{list_item}")) {
@@ -46,9 +31,6 @@ function section_replace_scalars($section, $replacements)
     return $section;
 }
 
-/**
- * Replace references
- */
 function references()
 {
     global $template_html, $cv_yaml;
@@ -62,9 +44,7 @@ function references()
     $template_html = preg_replace("/<references>(.*?)<\/references>/ms", $replacement, $template_html);
 }
 
-/**
- * Replace pages
- */
+
 function pages()
 {
     global $template_html, $cv_yaml;
@@ -106,9 +86,6 @@ function pages()
     }
 }
 
-/**
- * Replace roles
- */
 function roles()
 {
     global $template_html, $cv_yaml;
@@ -131,9 +108,6 @@ function roles()
     $template_html = preg_replace("/<previous-roles>(.*?)<\/previous-roles>/ms", $rows, $template_html);
 }
 
-/**
- * Replace remaining items
- */
 function replace()
 {
     global $template_html, $cv_yaml;
