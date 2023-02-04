@@ -21,6 +21,12 @@ perl:
 	export output_file="$(CWD)/out/$@.html" && \
 	perl "$(CWD)/src/$@/cv.pl" 
 
+javascript:
+	export cv_file="$(CWD)/input/cv.yaml" && \
+	export template_file="$(CWD)/input/template.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
+	node "$(CWD)/src/$@/cv.js" 
+
 ruby:
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
