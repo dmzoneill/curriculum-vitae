@@ -2,3 +2,4 @@ node_modules/**
 **.phar
 .stylelintrc.json
 **/out/**html
+**class

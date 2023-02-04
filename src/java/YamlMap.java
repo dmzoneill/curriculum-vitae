@@ -1,8 +1,8 @@
-import java.util.Map;
-import com.fasterxml.jackson.annotation.*;
+// import java.util.Map;
+// import com.fasterxml.jackson.annotation.*;
 
-public class YamlMap {
+// public class YamlMap {
 
-    @JsonProperty("mp")
-    Map<String, String> mp;
-}
+//     @JsonProperty("mp")
+//     Map<String, String> mp;
+// }
