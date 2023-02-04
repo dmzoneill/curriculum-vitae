@@ -2,6 +2,7 @@
 
 import os
 import re
+# isort skip line
 import yaml
 
 cv_details = os.getenv("cv_file")

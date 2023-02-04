@@ -51,6 +51,8 @@ push: version
 	git push -u origin main:main -f
 
 lint: version
+	curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
+	curl -OL https://squizlabs.github.io/PHP_CodeSniffer/phpcbf.phar
 	npm install --save-dev stylelint stylelint-config-standard
 	curl -o .stylelintrc.json https://raw.githubusercontent.com/dmzoneill/dmzoneill/main/.github/linters/.stylelintrc.json
 	npx standard --fix
@@ -58,4 +60,7 @@ lint: version
 	black src/python/cv.py
 	npx stylelint --fix "**/*.css"
 	npx htmlhint "**/*.html"
+	golangci-lint run --fix src/go/cv.go
 	rm .stylelintrc.json
+	php phpcs.phar src/php/cv.php
+	php phpcbf.phar src/php/cv.php
