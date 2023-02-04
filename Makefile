@@ -52,7 +52,7 @@ push: version
 
 lint: version
 	npm install --save-dev stylelint stylelint-config-standard
-	curl -o .stylelintrc.json https://github.com/dmzoneill/dmzoneill/tree/main/.github/linters/.stylelintrc.json?raw=true
+	curl -o .stylelintrc.json https://raw.githubusercontent.com/dmzoneill/dmzoneill/main/.github/linters/.stylelintrc.json
 	npx standard --fix
 	rubocop src/ruby/cv.rb -A
 	black src/python/cv.py
