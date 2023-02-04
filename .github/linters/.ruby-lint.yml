@@ -5,4 +5,4 @@
 
 inherit_gem:
   rubocop-github:
-    - config/rubocop.yml
+    - /github/workspace/config/rubocop.yml
