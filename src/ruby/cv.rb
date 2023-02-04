@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+# dmz.oneill@gmail.com
+
 require 'yaml'
 
 # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
