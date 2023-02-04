@@ -3,7 +3,7 @@
 /**
  * PHP version 7
  * 
- * @category cv generator
+ * @category cv_generator
  * @package  Template_Class
  * @author   Author <dmz.oneill@gmail.com>
  * @license  Apache2 license
