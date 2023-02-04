@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * PHP version 7
+ * 
+ * @category cv generator
+ * @package  Template_Class
+ * @author   Author <dmz.oneill@gmail.com>
+ * @license  Apache2 license
+ * @link     fio.ie
  * @file
  * Generate cv.php
  */
