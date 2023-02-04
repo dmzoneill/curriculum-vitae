@@ -62,5 +62,5 @@ lint: version
 	npx htmlhint "**/*.html"
 	golangci-lint run --fix src/go/cv.go
 	rm .stylelintrc.json
-	php phpcs.phar fix -w -p -v  src/php/cv.php
+	php phpcs.phar -w -p -v fix src/php/cv.php
 	php phpcbf.phar -w -p -v src/php/cv.php
