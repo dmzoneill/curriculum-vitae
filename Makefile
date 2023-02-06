@@ -8,6 +8,14 @@ version := $(shell grep 'version=.*' version | awk -F'=' '{print $$2}')
 next := $(shell echo ${version} | awk -F. '/[0-9]+\./{$$NF++;print}' OFS=.)
 jar_files := "jackson-annotations-2.14.2.jar:jackson-core-2.14.1.jar:jackson-databind-2.14.1.jar:jackson-dataformat-yaml-2.14.2.jar"
 
+cpp:
+	sudo apt install libyaml-cpp*
+	clear; cd src/cpp; g++ -g -w -O3 -std=c++17 cv.cpp -lboost_regex -lyaml-cpp -o main; cd -
+	export cv_file="$(CWD)/input/cv.yaml" && \
+	export template_file="$(CWD)/input/template.html" && \
+	export output_file="$(CWD)/out/$@.html" && \
+	./src/$@/main
+
 java:	
 	export cv_file="$(CWD)/input/cv.yaml" && \
 	export template_file="$(CWD)/input/template.html" && \
