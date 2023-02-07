@@ -2,13 +2,12 @@
 // Licensed under the Apache2 license
 #include <yaml-cpp/yaml.h>
 
+#include <boost/regex.hpp>
 #include <cstdlib>
 #include <exception>
 #include <fstream>
 #include <iostream>
 #include <string>
-#include <boost/regex.hpp>
-
 
 std::string replaceYamlNode(std::string html, YAML::Node replacement) {
   try {
@@ -22,7 +21,7 @@ std::string replaceYamlNode(std::string html, YAML::Node replacement) {
     }
 
     return copy;
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -33,7 +32,7 @@ std::string replaceLineItem(std::string html, std::string replacement) {
     std::string copy = html;
     boost::regex list_item_regex{"\\{list_item}"};
     return boost::regex_replace(copy, list_item_regex, replacement.c_str());
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -49,16 +48,16 @@ std::string replaceScalars(std::string html, YAML::Node node) {
       key = "\\{" + it->first.as<std::string>() + "\\}";
 
       switch (it->second.Type()) {
-        case YAML::NodeType::Scalar:
-          val = it->second.as<std::string>();
-          copy = boost::regex_replace(copy, boost::regex{key.c_str()},
-                                      val.c_str());
-          break;
+      case YAML::NodeType::Scalar:
+        val = it->second.as<std::string>();
+        copy =
+            boost::regex_replace(copy, boost::regex{key.c_str()}, val.c_str());
+        break;
       }
     }
 
     return copy;
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -109,7 +108,7 @@ std::string replaceSequences(std::string html, YAML::Node node) {
     }
 
     return copy;
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -131,12 +130,12 @@ std::string references(std::string html, YAML::Node node) {
 
     YAML::Node references = node["references"];
     for (YAML::iterator it = references.begin(); it != references.end(); ++it) {
-      const YAML::Node& reference = *it;
+      const YAML::Node &reference = *it;
       replacement += replaceYamlNode(match[1], reference);
     }
 
     return boost::regex_replace(copy, references_regex, replacement.c_str());
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -165,13 +164,13 @@ std::string roles(std::string html, YAML::Node node) {
     YAML::iterator it = roles.begin();
     ++it;
     for (it; it != roles.end(); ++it) {
-      const YAML::Node& role = *it;
+      const YAML::Node &role = *it;
       replacement += replaceLineItem(match[1], role.as<std::string>());
     }
 
     return boost::regex_replace(copy, previous_roles_regex,
                                 replacement.c_str());
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -258,7 +257,7 @@ std::string pages(std::string section, YAML::Node node) {
           replacement.c_str());
     }
     return result;
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return std::string("error");
   }
@@ -289,7 +288,7 @@ int replace() {
     out.close();
 
     return 0;
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return 1;
   }
@@ -298,7 +297,7 @@ int replace() {
 int main() {
   try {
     return replace();
-  } catch (std::exception& e) {
+  } catch (std::exception &e) {
     std::cerr << e.what() << std::endl;
     return 1;
   }

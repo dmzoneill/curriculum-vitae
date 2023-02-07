@@ -74,6 +74,8 @@ lint: version
 	npx stylelint --fix "**/*.css"
 	npx htmlhint "**/*.html"
 	golangci-lint run --fix src/go/cv.go
+	clang-format -i src/cpp/cv.cpp
 	rm .stylelintrc.json
 	- php phpcs.phar src/php/cv.php
 	- php phpcbf.phar src/php/cv.php
+	
