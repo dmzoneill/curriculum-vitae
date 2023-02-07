@@ -27,7 +27,7 @@ cpp:
 		sudo apt install libyaml-cpp*; \
 		cd $(CWD)/src/$@/; \
 		g++ -g -w -O3 -std=c++17 cv.cpp -lboost_regex -lyaml-cpp -o main; \
-		./main
+		./main; \
 	}
 
 java:	
