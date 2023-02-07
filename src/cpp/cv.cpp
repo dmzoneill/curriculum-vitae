@@ -2,12 +2,13 @@
 // Licensed under the Apache2 license
 #include <yaml-cpp/yaml.h>
 
-#include <boost/regex.hpp>
 #include <cstdlib>
 #include <exception>
 #include <fstream>
 #include <iostream>
 #include <string>
+#include <boost/regex.hpp>
+
 
 std::string replaceYamlNode(std::string html, YAML::Node replacement) {
   try {
