@@ -8,50 +8,49 @@ version := $(shell grep 'version=.*' version | awk -F'=' '{print $$2}')
 next := $(shell echo ${version} | awk -F. '/[0-9]+\./{$$NF++;print}' OFS=.)
 jar_files := "jackson-annotations-2.14.2.jar:jackson-core-2.14.1.jar:jackson-databind-2.14.1.jar:jackson-dataformat-yaml-2.14.2.jar"
 
+export cv_file := $(CWD)/input/cv.yaml
+export template_file := $(CWD)/input/template.html
+export output_file := $(CWD)/out/$(MAKECMDGOALS).html
+
+go:
+	{ \
+		go env -w GOBIN=$(CWD)/src/$@; \
+		cd $(CWD)/src/$@; \
+		go mod init main; \
+		go get gopkg.in/yaml.v2; \
+		go get github.com/gookit/goutil/dump; \
+		go run cv.go; \
+	}
+
 cpp:
-	sudo apt install libyaml-cpp*
-	clear; cd src/cpp; g++ -g -w -O3 -std=c++17 cv.cpp -lboost_regex -lyaml-cpp -o main; cd -
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
-	./src/$@/main
+	{ \
+		sudo apt install libyaml-cpp*; \
+		cd $(CWD)/src/$@/; \
+		g++ -g -w -O3 -std=c++17 cv.cpp -lboost_regex -lyaml-cpp -o main; \
+		./main
+	}
 
 java:	
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
-	cd $(CWD)/src/$@/ && javac -cp ${jar_files} -s . cv.java YamlMap.java && cd - && \
-	cd $(CWD)/src/$@/ && java -cp ".:${jar_files}" cv && cd -
+	{ \
+		cd $(CWD)/src/$@/; \
+	 	javac -cp ${jar_files} -s . cv.java YamlMap.java; \
+		java -cp ".:${jar_files}" cv; \
+	}
 
 perl:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
 	perl "$(CWD)/src/$@/cv.pl" 
 
 javascript:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
 	node "$(CWD)/src/$@/cv.js" 
 
 ruby:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
 	ruby "$(CWD)/src/$@/cv.rb" 
 
 php:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
 	php "$(CWD)/src/$@/cv.php" 
 
 python:
-	export cv_file="$(CWD)/input/cv.yaml" && \
-	export template_file="$(CWD)/input/template.html" && \
-	export output_file="$(CWD)/out/$@.html" && \
-	python3 $(CWD)/src/$@/cv.py
+	python3 "$(CWD)/src/$@/cv.py"
 
 bump:
 	sed "s/$(version)/$(next)/" -i version
