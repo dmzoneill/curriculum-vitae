@@ -4,3 +4,7 @@ node_modules/**
 **/out/**html
 **class
 src/cpp/main
+.vscode/**
+src/go/go.mod
+src/go/go.sum
+src/java/
