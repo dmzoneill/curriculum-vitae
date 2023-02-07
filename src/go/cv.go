@@ -151,6 +151,7 @@ func main() {
 	template_html_bytes, template_file_err := os.ReadFile(os.Getenv("template_file"))
 	check(template_file_err)
 
+	//nolint
 	yaml_error := yaml.Unmarshal([]byte(cv_yaml), &m)
 	check(yaml_error)
 
