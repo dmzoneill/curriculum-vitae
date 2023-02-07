@@ -1,5 +1,6 @@
 // Copyright (c) 2023 David O Neill. All rights reserved.
 // Licensed under the Apache2 license
+// clang-format off
 #include <yaml-cpp/yaml.h>
 
 #include <cstdlib>
@@ -8,7 +9,7 @@
 #include <iostream>
 #include <string>
 #include <boost/regex.hpp>
-
+// clang-format on
 
 std::string replaceYamlNode(std::string html, YAML::Node replacement) {
   try {
