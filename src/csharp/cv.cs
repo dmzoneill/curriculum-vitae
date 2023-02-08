@@ -124,7 +124,7 @@ namespace cv
         {
             try
             {
-                if (html.IndexOf("<children>", StringComparison.Ordinal) > -1 )
+                if (html.IndexOf("<children>", StringComparison.Ordinal) > -1)
                 {
                     string copy = html;
                     var pattern = @"<children>(.*?)</children>";
@@ -239,7 +239,7 @@ namespace cv
                 foreach (var X in sequence)
                 {
                     if (X.NodeType == YamlNodeType.Mapping)
-                    {                        
+                    {
                         YamlMappingNode item = (YamlMappingNode)X;
                         replacement += this.replace_scalars(html, item);
                     }
