@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cv", "cv.csproj", "{DBF94411-450D-4615-BB88-896F48FD0A10}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7DB8B037-CB5C-4B63-9994-036FF89CB2F9}"
+	ProjectSection(SolutionItems) = preProject
+		YamlDotNet.dll = YamlDotNet.dll
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF94411-450D-4615-BB88-896F48FD0A10}.Debug|x86.ActiveCfg = Debug|x86
+		{DBF94411-450D-4615-BB88-896F48FD0A10}.Debug|x86.Build.0 = Debug|x86
+		{DBF94411-450D-4615-BB88-896F48FD0A10}.Release|x86.ActiveCfg = Release|x86
+		{DBF94411-450D-4615-BB88-896F48FD0A10}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

@@ -1,7 +1,0 @@
-{
-  "devDependencies": {
-    "htmlhint": "^1.1.4",
-    "stylelint": "^14.16.1",
-    "stylelint-config-standard": "^29.0.0"
-  }
-}

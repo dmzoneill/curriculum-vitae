@@ -1,4 +1,4 @@
-node_modules/**
+**/node_modules/**
 **.phar
 .stylelintrc.json
 **/out/**html
@@ -8,3 +8,7 @@ src/cpp/main
 src/go/go.mod
 src/go/go.sum
 src/java/
+**/bin/**
+**/dotnet-tools.json
+**/src/csharp/.vs/**
+**/obj/**
