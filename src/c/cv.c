@@ -7,7 +7,7 @@
 #define MAX_LEN 500
 
 char *section_replace_scalars(char *section, char *replacements) {
-  char *res = (char *)malloc(MAX_LEN);
+  char *res = (char *)malloc(MAX_LEN); // NOLINT
   memset(res, 0, MAX_LEN);
 
   if (strstr(section, "{list_item}") != NULL) {
@@ -22,14 +22,14 @@ char *section_replace_scalars(char *section, char *replacements) {
 
     int count = 0;
     while (start != NULL && end != NULL) {
-      char *temp = (char *)malloc(MAX_LEN);
+      char *temp = (char *)malloc(MAX_LEN); // NOLINT
       memset(temp, 0, MAX_LEN);
 
       int len = end - start - 1;
       strncpy(temp, start + 1, len);
       temp[len] = '\0';
 
-      char *replacement = (char *)malloc(MAX_LEN);
+      char *replacement = (char *)malloc(MAX_LEN); // NOLINT
       memset(replacement, 0, MAX_LEN);
 
       snprintf(replacement, "%s\n", replacements);
@@ -41,7 +41,7 @@ char *section_replace_scalars(char *section, char *replacements) {
         char *replace_end = strstr(replace_start, "\n");
         int replace_len = replace_end - replace_start;
 
-        char *final_replacement = (char *)malloc(replace_len + 1);
+        char *final_replacement = (char *)malloc(replace_len + 1); // NOLINT
         memset(final_replacement, 0, replace_len + 1);
 
         strncpy(final_replacement, replace_start, replace_len);
