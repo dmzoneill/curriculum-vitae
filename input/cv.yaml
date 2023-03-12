@@ -2,16 +2,16 @@
 # yamllint disable rule:line-length
 lang: en
 charset: UTF-8
-og:title: David Cu - Curriculum Vitae
+og:title: David O Neill - Curriculum Vitae
 og:description: SysOps, DevOps, SRE and Software Developer
 og:image: "//cv.fio.ie/og-image.png"
 og:image:type: image/png
 og:image:width: '1200'
 og:image:height: '600'
 og:url: "//cv.fio.ie"
-title: David Cu - Curriculum Vitae
+title: David O Neill - Curriculum Vitae
 watermark: cv.fio.ie
-candidate-name: David Cu
+candidate-name: David O Neill
 candidate-image: media/photo.png
 nationality: Irish (freely work in E.U)
 maps-url: https://goo.gl/maps/gwKzXpfeCKoBwTWv8
@@ -26,9 +26,9 @@ phone-url: tel:00353861938787
 email: david.mz.cu@gmail.com
 email-url: mailto:david.mz.cu@gmail.com
 date-of-birth: 26/03/1984
-linkedin-url: https://www.linkedin.com/in/davidmzcu
+linkedin-url: https://www.linkedin.com/in/dmzoneill
 github-url: https://github.com/dmzoneill
-launchpad-url: https://launchpad.net/~davidmzcu/+git
+launchpad-url: https://launchpad.net/~dmzoneill/+git
 roles:
   - Principal Software Engineer
   - Site Reliability Engineer
