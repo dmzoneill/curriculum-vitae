@@ -2,16 +2,16 @@
 # yamllint disable rule:line-length
 lang: en
 charset: UTF-8
-og:title: David ONeill-Cu - Curriculum Vitae
+og:title: David Cu - Curriculum Vitae
 og:description: SysOps, DevOps, SRE and Software Developer
 og:image: "//cv.fio.ie/og-image.png"
 og:image:type: image/png
 og:image:width: '1200'
 og:image:height: '600'
 og:url: "//cv.fio.ie"
-title: David ONeill-Cu - Curriculum Vitae
+title: David Cu - Curriculum Vitae
 watermark: cv.fio.ie
-candidate-name: David ONeill-Cu
+candidate-name: David Cu
 candidate-image: media/photo.png
 nationality: Irish (freely work in E.U)
 maps-url: https://goo.gl/maps/gwKzXpfeCKoBwTWv8
