@@ -448,11 +448,11 @@ li.nobullet {
 .watermark {
   position: absolute;
   margin-top: 13cm;
-  margin-left: 3cm;
-  margin-right: 3cm;
+  margin-left: 2cm;
+  margin-right: 2cm;
   opacity: 0.075;
-  font-size: 12em;
-  width: 11cm;
+  font-size: 10em;
+  width: 9cm;
   text-align: center;
   z-index: 1000;
   color: #2e74b5;

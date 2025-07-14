@@ -1,9 +1,17 @@
 @media print {
-  body,
-  section {
+  body {
     margin: 0 !important;
     padding: 0 !important;
-    box-shadow: 0 0 0 rgb(255 255 255 / 25500%) !important;
+    background: white !important;
+  }
+
+  section {
+    margin: 0 !important;
+    padding: 0.8cm !important;
+    box-shadow: none !important;
+    width: 19.4cm !important;
+    height: 28.1cm !important;
+    page-break-after: always;
   }
 
   footer {
@@ -16,22 +24,133 @@
   }
 
   div.container {
-    margin: auto;
-    width: 21cm;
-    height: auto;
+    margin: 0 !important;
+    width: 21cm !important;
+    height: auto !important;
   }
 
   div.pages {
-    margin: auto;
-    width: 21cm;
-    height: auto;
+    margin: 0 !important;
+    width: 21cm !important;
+    height: auto !important;
   }
 
   section.page1 {
-    float: none;
+    margin: 0 !important;
+    width: 19.4cm !important;
+    height: 28.1cm !important;
+    float: none !important;
   }
 
   section.page2 {
-    float: none;
+    margin: 0 !important;
+    width: 19.4cm !important;
+    height: 28.1cm !important;
+    float: none !important;
+  }
+
+  /* Font size adjustments for print */
+  h1 {
+    font-size: 24pt !important;
+  }
+
+  h2 {
+    font-size: 15pt !important;
+  }
+
+  h3 {
+    font-size: 14pt !important;
+  }
+
+  h4 {
+    font-size: 12pt !important;
+  }
+
+  h5 {
+    font-size: 11pt !important;
+  }
+
+  h6 {
+    font-size: 10pt !important;
+  }
+
+  .ResumeBody h6 {
+    font-size: 9pt !important;
+  }
+
+  h6.sidebar {
+    font-size: 10pt !important;
+  }
+
+  .PersonalDetails,
+  .PersonalDetailsAddress,
+  .JobDetails,
+  .ReferenceName,
+  .LeftSideDetails,
+  a {
+    font-size: 10pt !important;
+  }
+
+  .ReferenceDetails {
+    font-size: 10pt !important;
+  }
+
+  .JobPeriod {
+    font-size: 9pt !important;
+  }
+
+  ul.PersonalDetails li,
+  ul.LeftSideDetails li,
+  ul.ReferenceName li,
+  ul.JobDetails li,
+  .PersonalDetailsAddress {
+    font-size: 10pt !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Adjust layout spacing for print */
+  .ResumeBodyLeft {
+    width: 270px !important;
+    padding-right: 20px !important;
+  }
+
+  .ResumeBodyRight {
+    left: 290px !important;
+    padding-left: 20px !important;
+  }
+
+  .JobPeriod {
+    width: 18% !important;
+    padding-right: 8px !important;
+  }
+
+  .JobTitle {
+    width: 82% !important;
+    margin-left: -10px !important;
+  }
+
+  .watermark {
+    font-size: 6em !important;
+  }
+
+  /* Reduce margins and padding for better space utilization */
+  .ResumeHeader {
+    margin-bottom: 3px !important;
+  }
+
+  .ResumeHeaderLeft h4 {
+    margin-top: -6px !important;
+  }
+
+  .underline {
+    margin-bottom: 8px !important;
+  }
+
+  .Job {
+    margin-bottom: 8px !important;
+  }
+
+  .JobHeader {
+    margin-bottom: 3px !important;
   }
 }

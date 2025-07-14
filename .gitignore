@@ -12,3 +12,4 @@ src/java/
 **/dotnet-tools.json
 **/src/csharp/.vs/**
 **/obj/**
+CLAUDE.md
